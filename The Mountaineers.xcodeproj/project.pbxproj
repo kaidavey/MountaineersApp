@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		C70DB3B12C3088F900DFBEC2 /* The_MountaineersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */; };
-		C70DB3B32C3088F900DFBEC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B22C3088F900DFBEC2 /* ContentView.swift */; };
-		C70DB3B52C3088F900DFBEC2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B42C3088F900DFBEC2 /* Item.swift */; };
+		C70DB3B32C3088F900DFBEC2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B22C3088F900DFBEC2 /* LoginView.swift */; };
 		C70DB3B72C3088FA00DFBEC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */; };
 		C70DB3BA2C3088FA00DFBEC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70DB3B92C3088FA00DFBEC2 /* Preview Assets.xcassets */; };
+		C70DB3C12C308DC200DFBEC2 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C70DB3AD2C3088F900DFBEC2 /* The Mountaineers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Mountaineers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_MountaineersApp.swift; sourceTree = "<group>"; };
-		C70DB3B22C3088F900DFBEC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C70DB3B42C3088F900DFBEC2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C70DB3B22C3088F900DFBEC2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C70DB3B92C3088FA00DFBEC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */,
-				C70DB3B22C3088F900DFBEC2 /* ContentView.swift */,
-				C70DB3B42C3088F900DFBEC2 /* Item.swift */,
+				C70DB3B22C3088F900DFBEC2 /* LoginView.swift */,
+				C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */,
 				C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */,
 				C70DB3B82C3088FA00DFBEC2 /* Preview Content */,
 			);
@@ -140,9 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C70DB3B32C3088F900DFBEC2 /* ContentView.swift in Sources */,
-				C70DB3B52C3088F900DFBEC2 /* Item.swift in Sources */,
+				C70DB3B32C3088F900DFBEC2 /* LoginView.swift in Sources */,
 				C70DB3B12C3088F900DFBEC2 /* The_MountaineersApp.swift in Sources */,
+				C70DB3C12C308DC200DFBEC2 /* LoginManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

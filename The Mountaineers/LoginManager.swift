@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import SwiftData
+
+struct LoginManager {
+    func validate(username:String, password:String) {
+        
+    }
+}
