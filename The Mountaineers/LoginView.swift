@@ -15,9 +15,7 @@ struct LoginView: View {
     
     var body: some View {
         ZStack {
-            Color
-                .darkBlue
-                .ignoresSafeArea()
+            Color(.darkGray).ignoresSafeArea()
             VStack {
                 Image("logo")
                     .resizable()
@@ -26,10 +24,10 @@ struct LoginView: View {
                 
                 TextField("Username", text: $username)
                     .padding(.leading, 10)
-                    .frame(height: 30)
+                    .frame(height:30)
                     .textInputAutocapitalization(.never)
                     .disableAutocorrection(true)
-                    .background(Color.white)
+                    .background(Color(.systemGray4))
                     .cornerRadius(8.0)
                     .padding([.top, .leading, .trailing], 30)
                 
@@ -53,18 +51,23 @@ struct LoginView: View {
                     }
                 }
                 .padding(.leading, 10)
-                .frame(height: 30)
+                .frame(height:30)
                 .textInputAutocapitalization(.never)
                 .disableAutocorrection(true)
-                .background(Color.white)
+                .background(Color(.systemGray4))
                 .cornerRadius(8.0)
                 .padding([.bottom, .leading, .trailing], 30)
                 
                 Button("Login") {
-                    loginManager.validate(username:username, password:password)
+                    if loginManager.validate(username:username, password:password) {
+                        
+                    }
                 }
+                .frame(width:100, height:40)
                 .fontWeight(.semibold)
-                .buttonStyle(.borderedProminent)
+                .foregroundColor(.white)
+                .background(.black)
+                .cornerRadius(10)
             }
         }
     }

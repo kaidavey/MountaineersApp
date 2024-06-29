@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 struct LoginManager {
-    func validate(username:String, password:String) {
-        
+    func validate(username:String, password:String) -> Bool {
+        return true
     }
 }

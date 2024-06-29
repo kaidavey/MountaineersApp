@@ -12,6 +12,7 @@
 		C70DB3B72C3088FA00DFBEC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */; };
 		C70DB3BA2C3088FA00DFBEC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70DB3B92C3088FA00DFBEC2 /* Preview Assets.xcassets */; };
 		C70DB3C12C308DC200DFBEC2 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */; };
+		C70DB3C32C30BA8F00DFBEC2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3C22C30BA8F00DFBEC2 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C70DB3B92C3088FA00DFBEC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		C70DB3C22C30BA8F00DFBEC2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */,
 				C70DB3B22C3088F900DFBEC2 /* LoginView.swift */,
 				C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */,
+				C70DB3C22C30BA8F00DFBEC2 /* HomeView.swift */,
 				C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */,
 				C70DB3B82C3088FA00DFBEC2 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C70DB3B32C3088F900DFBEC2 /* LoginView.swift in Sources */,
+				C70DB3C32C30BA8F00DFBEC2 /* HomeView.swift in Sources */,
 				C70DB3B12C3088F900DFBEC2 /* The_MountaineersApp.swift in Sources */,
 				C70DB3C12C308DC200DFBEC2 /* LoginManager.swift in Sources */,
 			);
@@ -278,6 +282,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"The Mountaineers/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The-Mountaineers-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -306,6 +311,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"The Mountaineers/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The-Mountaineers-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
