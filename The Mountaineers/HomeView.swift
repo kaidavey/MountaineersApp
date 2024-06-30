@@ -9,16 +9,14 @@ struct HomeView: View {
     
     @EnvironmentObject var loginManager: LoginManager
     @State private var showMenu = false
+
     
     var body: some View {
         NavigationStack {
             ZStack {
                 Color(.systemGray4).ignoresSafeArea()
-                VStack {
-                    Text("i love laufey")
-                }
                 
-                SideMenuView(isShowing: $showMenu)
+                SideMenuView(isShowing: $showMenu, selectedOption: SideMenuOption(name: "HOME", isFontLarge: true))
                     .environmentObject(loginManager)
             }
             .toolbar(showMenu ? .hidden : .visible, for: .navigationBar)
