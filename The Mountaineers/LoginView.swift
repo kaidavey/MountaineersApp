@@ -69,20 +69,21 @@ struct LoginView: View {
                         .opacity(0.2)
                         .frame(width: 300, height:1.5)
                 }
-                
+
                 let isValid:Bool = loginManager.validate(username:username, password:password)
                 
-                Button("Login") {
-                    if isValid {
-                        
+                NavigationLink(destination:
+                                isValid == true ? AnyView(HomeView()) : AnyView(EmptyView())
+                ){
+                    Button("Login") {
                     }
+                    .font(.custom("Tahoma", size: 18))
+                    .frame(width:100, height:40)
+                    .foregroundColor(.white)
+                    .background(.darkBlue)
+                    .cornerRadius(5)
+                    .padding(.top, 30)
                 }
-                .font(.custom("Tahoma", size: 18))
-                .frame(width:100, height:40)
-                .foregroundColor(.white)
-                .background(.darkBlue)
-                .cornerRadius(5)
-                .padding(.top, 30)
                 
                 Spacer()
             }
