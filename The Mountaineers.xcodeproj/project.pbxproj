@@ -13,6 +13,7 @@
 		C70DB3BA2C3088FA00DFBEC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70DB3B92C3088FA00DFBEC2 /* Preview Assets.xcassets */; };
 		C70DB3C12C308DC200DFBEC2 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */; };
 		C70DB3C32C30BA8F00DFBEC2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3C22C30BA8F00DFBEC2 /* HomeView.swift */; };
+		C7D147632C30E2F900329856 /* Tahoma Regular font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C70DB3B92C3088FA00DFBEC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		C70DB3C22C30BA8F00DFBEC2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tahoma Regular font.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */,
 				C70DB3C22C30BA8F00DFBEC2 /* HomeView.swift */,
 				C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */,
+				C7D1475D2C30CD9600329856 /* Fonts */,
 				C70DB3B82C3088FA00DFBEC2 /* Preview Content */,
 			);
 			path = "The Mountaineers";
@@ -71,6 +74,14 @@
 				C70DB3B92C3088FA00DFBEC2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C7D1475D2C30CD9600329856 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +144,7 @@
 			files = (
 				C70DB3BA2C3088FA00DFBEC2 /* Preview Assets.xcassets in Resources */,
 				C70DB3B72C3088FA00DFBEC2 /* Assets.xcassets in Resources */,
+				C7D147632C30E2F900329856 /* Tahoma Regular font.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,6 +5,7 @@
 
 import SwiftUI
 import SwiftData
+import UIKit
 
 struct LoginView: View {
     
@@ -15,59 +16,75 @@ struct LoginView: View {
     
     var body: some View {
         ZStack {
-            Color(.darkGray).ignoresSafeArea()
-            VStack {
+            Color(.systemGray4).ignoresSafeArea()
+            VStack(spacing: 0.0) {
+                Spacer()
+                
                 Image("logo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width:150)
+                    .frame(width:200)
                 
-                TextField("Username", text: $username)
-                    .padding(.leading, 10)
-                    .frame(height:30)
-                    .textInputAutocapitalization(.never)
-                    .disableAutocorrection(true)
-                    .background(Color(.systemGray4))
-                    .cornerRadius(8.0)
-                    .padding([.top, .leading, .trailing], 30)
+                Spacer()
                 
-                HStack {
-                    Group {
-                        if isSecured {
-                            SecureField("Password", text: $password)
-                        } else {
-                            TextField("Password", text: $password)
+                ZStack {
+                    Rectangle()
+                        .foregroundColor(.darkBlue)
+                        .frame(width: 340, height: 80)
+                        .cornerRadius(5)
+                    VStack(spacing: 15.0) {
+                        TextField("", text:$username, prompt: Text("Enter Username").foregroundStyle(.white))
+                            .foregroundColor(.white)
+                            .font(.custom("Tahoma", size: 18))
+                            .textInputAutocapitalization(.never)
+                            .disableAutocorrection(true)
+                            .padding(.horizontal, 50)
+                        
+                        HStack {
+                            Group {
+                                if isSecured {
+                                    SecureField("", text: $password, prompt: Text("Enter Password").foregroundStyle(.white))
+                                } else {
+                                    TextField("", text: $password, prompt: Text("Enter Password").foregroundStyle(.white))
+                                }
+                            }
+                            
+                            Spacer()
+                            
+                            Button(action: {
+                                isSecured.toggle()
+                            }) {
+                                Image(systemName: self.isSecured ? "eye.slash" : "eye")
+                                    .accentColor(.white)
+                            }
                         }
+                        .foregroundColor(.white)
+                        .font(.custom("Tahoma", size: 18))
+                        .textInputAutocapitalization(.never)
+                        .disableAutocorrection(true)
+                        .padding(.horizontal, 50)
                     }
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        isSecured.toggle()
-                    }) {
-                        Image(systemName: self.isSecured ? "eye.slash" : "eye")
-                            .accentColor(.gray)
-                            .padding(.trailing, 10)
-                    }
+                    Rectangle()
+                        .foregroundColor(.white)
+                        .opacity(0.2)
+                        .frame(width: 300, height:1.5)
                 }
-                .padding(.leading, 10)
-                .frame(height:30)
-                .textInputAutocapitalization(.never)
-                .disableAutocorrection(true)
-                .background(Color(.systemGray4))
-                .cornerRadius(8.0)
-                .padding([.bottom, .leading, .trailing], 30)
+                
+                let isValid:Bool = loginManager.validate(username:username, password:password)
                 
                 Button("Login") {
-                    if loginManager.validate(username:username, password:password) {
+                    if isValid {
                         
                     }
                 }
+                .font(.custom("Tahoma", size: 18))
                 .frame(width:100, height:40)
-                .fontWeight(.semibold)
                 .foregroundColor(.white)
-                .background(.black)
-                .cornerRadius(10)
+                .background(.darkBlue)
+                .cornerRadius(5)
+                .padding(.top, 30)
+                
+                Spacer()
             }
         }
     }
