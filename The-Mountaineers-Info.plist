@@ -5,6 +5,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Tahoma Regular font.ttf</string>
+		<string>tahomabd.ttf</string>
 	</array>
 	<key>UTImportedTypeDeclarations</key>
 	<array>

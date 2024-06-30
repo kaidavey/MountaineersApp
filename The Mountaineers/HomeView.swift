@@ -2,14 +2,38 @@
 //  HomeView.swift
 //  The Mountaineers
 //
-//  Created by Hong Huang on 6/29/24.
-//
 
 import SwiftUI
 
 struct HomeView: View {
+    
+    @EnvironmentObject var loginManager: LoginManager
+    @State private var showMenu = false
+    
     var body: some View {
-        Text("hello there")
+        NavigationStack {
+            ZStack {
+                Color(.systemGray4).ignoresSafeArea()
+                VStack {
+                    Text("i love laufey")
+                }
+                
+                SideMenuView(isShowing: $showMenu)
+                    .environmentObject(loginManager)
+            }
+            .toolbar(showMenu ? .hidden : .visible, for: .navigationBar)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: {
+                        showMenu.toggle()
+                    }, label: {
+                        Image(systemName: "line.3.horizontal")
+                            .fontWeight(.bold)
+                            .foregroundColor(.darkBlue)
+                    })
+                }
+            }
+        }
     }
 }
 

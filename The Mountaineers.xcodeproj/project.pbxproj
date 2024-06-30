@@ -14,7 +14,12 @@
 		C70DB3C12C308DC200DFBEC2 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */; };
 		C70DB3C32C30BA8F00DFBEC2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3C22C30BA8F00DFBEC2 /* HomeView.swift */; };
 		C7D147632C30E2F900329856 /* Tahoma Regular font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */; };
-		C7D147652C30F8EB00329856 /* LoginFailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D147642C30F8EB00329856 /* LoginFailedView.swift */; };
+		C7D147692C317AEC00329856 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D147682C317AEC00329856 /* SideMenuView.swift */; };
+		C7D1476B2C317BE300329856 /* SideMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D1476A2C317BE300329856 /* SideMenuHeader.swift */; };
+		C7D147722C3195A900329856 /* tahomabd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7D147712C3195A900329856 /* tahomabd.ttf */; };
+		C7D147742C31992500329856 /* SideMenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D147732C31992500329856 /* SideMenuRow.swift */; };
+		C7D147772C319A7900329856 /* SideMenuDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D147762C319A7900329856 /* SideMenuDataService.swift */; };
+		C7D147792C319B6000329856 /* SideMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D147782C319B6000329856 /* SideMenuOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +31,12 @@
 		C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		C70DB3C22C30BA8F00DFBEC2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tahoma Regular font.ttf"; sourceTree = "<group>"; };
-		C7D147642C30F8EB00329856 /* LoginFailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFailedView.swift; sourceTree = "<group>"; };
+		C7D147682C317AEC00329856 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		C7D1476A2C317BE300329856 /* SideMenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeader.swift; sourceTree = "<group>"; };
+		C7D147712C3195A900329856 /* tahomabd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tahomabd.ttf; sourceTree = "<group>"; };
+		C7D147732C31992500329856 /* SideMenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRow.swift; sourceTree = "<group>"; };
+		C7D147762C319A7900329856 /* SideMenuDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuDataService.swift; sourceTree = "<group>"; };
+		C7D147782C319B6000329856 /* SideMenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +69,12 @@
 		C70DB3AF2C3088F900DFBEC2 /* The Mountaineers */ = {
 			isa = PBXGroup;
 			children = (
+				C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */,
 				C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */,
 				C70DB3B22C3088F900DFBEC2 /* LoginView.swift */,
-				C7D147642C30F8EB00329856 /* LoginFailedView.swift */,
-				C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */,
 				C70DB3C22C30BA8F00DFBEC2 /* HomeView.swift */,
-				C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */,
+				C7D147682C317AEC00329856 /* SideMenuView.swift */,
+				C7D1476C2C317D0700329856 /* Extras */,
 				C7D1475D2C30CD9600329856 /* Fonts */,
 				C70DB3B82C3088FA00DFBEC2 /* Preview Content */,
 			);
@@ -83,8 +93,45 @@
 			isa = PBXGroup;
 			children = (
 				C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */,
+				C7D147712C3195A900329856 /* tahomabd.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C7D1476C2C317D0700329856 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				C7D1476E2C317D1F00329856 /* Managers */,
+				C7D147752C319A6200329856 /* Models */,
+				C7D1476D2C317D0F00329856 /* Supplamental Views */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		C7D1476D2C317D0F00329856 /* Supplamental Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7D1476A2C317BE300329856 /* SideMenuHeader.swift */,
+				C7D147732C31992500329856 /* SideMenuRow.swift */,
+			);
+			path = "Supplamental Views";
+			sourceTree = "<group>";
+		};
+		C7D1476E2C317D1F00329856 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C7D147752C319A6200329856 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7D147762C319A7900329856 /* SideMenuDataService.swift */,
+				C7D147782C319B6000329856 /* SideMenuOption.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D147722C3195A900329856 /* tahomabd.ttf in Resources */,
 				C70DB3BA2C3088FA00DFBEC2 /* Preview Assets.xcassets in Resources */,
 				C70DB3B72C3088FA00DFBEC2 /* Assets.xcassets in Resources */,
 				C7D147632C30E2F900329856 /* Tahoma Regular font.ttf in Resources */,
@@ -158,10 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D147772C319A7900329856 /* SideMenuDataService.swift in Sources */,
 				C70DB3B32C3088F900DFBEC2 /* LoginView.swift in Sources */,
-				C7D147652C30F8EB00329856 /* LoginFailedView.swift in Sources */,
 				C70DB3C32C30BA8F00DFBEC2 /* HomeView.swift in Sources */,
+				C7D147692C317AEC00329856 /* SideMenuView.swift in Sources */,
 				C70DB3B12C3088F900DFBEC2 /* The_MountaineersApp.swift in Sources */,
+				C7D147792C319B6000329856 /* SideMenuOption.swift in Sources */,
+				C7D1476B2C317BE300329856 /* SideMenuHeader.swift in Sources */,
+				C7D147742C31992500329856 /* SideMenuRow.swift in Sources */,
 				C70DB3C12C308DC200DFBEC2 /* LoginManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
