@@ -9,7 +9,7 @@ import UIKit
 
 struct LoginView: View {
     
-    @StateObject var loginManager = LoginManager()
+    @EnvironmentObject var loginManager: LoginManager
     @State var username: String = ""
     @State var password: String = ""
     @State private var isSecured: Bool = true
@@ -43,15 +43,6 @@ struct LoginView: View {
                                 .disableAutocorrection(true)
                                 .padding(.horizontal, 50)
                             
-                            SecureField("", text: $password, prompt: Text("Enter Password").foregroundStyle(.white))
-                                .foregroundColor(.white)
-                                .font(.custom("Tahoma", size: 18))
-                                .textInputAutocapitalization(.never)
-                                .disableAutocorrection(true)
-                                .padding(.horizontal, 50)
-                            
-                            
-                            /*
                             HStack {
                                 if isSecured {
                                     SecureField("", text: $password, prompt: Text("Enter Password").foregroundStyle(.white))
@@ -74,7 +65,6 @@ struct LoginView: View {
                             .textInputAutocapitalization(.never)
                             .disableAutocorrection(true)
                             .padding(.horizontal, 50)
-                             */
                             
                         }
                         Rectangle()
@@ -120,10 +110,4 @@ struct LoginView: View {
             }
         }
     }
-}
-
-
-
-#Preview {
-    LoginView()
 }

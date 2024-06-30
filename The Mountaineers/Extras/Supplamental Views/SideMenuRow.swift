@@ -10,11 +10,7 @@ import SwiftUI
 struct SideMenuRow: View {
     
     let option: SideMenuOption
-    @Binding var selectedOption: SideMenuOption
-    
-    private var isSelected: Bool {
-        return selectedOption.name == option.name
-    }
+    @Binding var selectedTitle: SideMenuOption
     
     var body: some View {
         if (option.isFontLarge) {
@@ -41,8 +37,8 @@ struct SideMenuRow: View {
             .frame(width: 216, height: 30)
         }
     }
-}
-
-#Preview {
-    SideMenuRow(option: SideMenuOption(name: "TEST CASE", isFontLarge: true), selectedOption: .constant(SideMenuOption(name: "TEST CASE", isFontLarge: true)))
+    
+    private var isSelected: Bool {
+        return selectedTitle.name == option.name
+    }
 }

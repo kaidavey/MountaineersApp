@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct SideMenuOption: Identifiable {
     var id: UUID = UUID()

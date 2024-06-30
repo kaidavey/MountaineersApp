@@ -9,17 +9,21 @@ struct HomeView: View {
     
     @EnvironmentObject var loginManager: LoginManager
     @State private var showMenu = false
-
+    @State private var selectedTab = 0
     
     var body: some View {
         NavigationStack {
             ZStack {
                 Color(.systemGray4).ignoresSafeArea()
                 
-                SideMenuView(isShowing: $showMenu, selectedOption: SideMenuOption(name: "HOME", isFontLarge: true))
+                TabView(selection: $selectedTab) {
+                    
+                }
+                .hidden()
+                
+                SideMenuView(isShowing: $showMenu, selectedTitle: SideMenuOption(name: "HOME", isFontLarge: true))
                     .environmentObject(loginManager)
             }
-            .toolbar(showMenu ? .hidden : .visible, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button(action: {
@@ -29,12 +33,9 @@ struct HomeView: View {
                             .fontWeight(.bold)
                             .foregroundColor(.darkBlue)
                     })
+                    .opacity(showMenu ? 0 : 1)
                 }
             }
         }
     }
-}
-
-#Preview {
-    HomeView()
 }

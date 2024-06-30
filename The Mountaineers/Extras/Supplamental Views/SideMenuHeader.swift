@@ -16,13 +16,9 @@ struct SideMenuHeader: View {
                 .scaledToFit()
                 .frame(width: 48, height: 48)
                 .foregroundStyle(.gray)
-            Text(loginManager.userName)
+            Text(loginManager.getUsername())
                 .font(.custom("Tahoma-Bold", size: 16))
                 .foregroundStyle(.white)
         }
     }
-}
-
-#Preview {
-    SideMenuHeader()
 }
