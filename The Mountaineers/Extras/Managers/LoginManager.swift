@@ -9,14 +9,15 @@ import SwiftUI
 
 class LoginManager: ObservableObject {
     
-    @Published private(set) var userName: String = ""
-    @Published private(set) var passWord: String = ""
-    @AppStorage("loggedInUser") private var loggedInUser: String = ""
+    @Published private(set) var username: String = ""
+    @Published private(set) var password: String = ""
+    @AppStorage("loggedInUser") private var loggedInUsername: String = ""
     @AppStorage("loggedInPassword") private var loggedInPassword: String = ""
     
     func isValidUser(username: String, password: String) -> Bool {
-        userName = username
-        passWord = password
+        self.username = username
+        self.password = password
+        
         if (true) {
             storeData()
         }
@@ -24,15 +25,15 @@ class LoginManager: ObservableObject {
     }
     
     func getUsername() -> String {
-        return loggedInUser
+        return loggedInUsername
     }
     
     func storeData() {
-        loggedInUser = userName
-        loggedInPassword = passWord
+        loggedInUsername = username
+        loggedInPassword = password
     }
     
     func hasStoredData() -> Bool {
-        return loggedInUser.count > 0
+        return loggedInUsername.count > 0
     }
 }

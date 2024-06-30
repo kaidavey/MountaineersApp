@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70C424F2C31DDEF00800E51 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C424E2C31DDEF00800E51 /* HomeView.swift */; };
+		C70C42552C31E0C100800E51 /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C42542C31E0C100800E51 /* ActivitiesView.swift */; };
+		C70C42592C31E0DA00800E51 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C42582C31E0DA00800E51 /* CoursesView.swift */; };
 		C70DB3B12C3088F900DFBEC2 /* The_MountaineersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */; };
 		C70DB3B32C3088F900DFBEC2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B22C3088F900DFBEC2 /* LoginView.swift */; };
 		C70DB3B72C3088FA00DFBEC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */; };
 		C70DB3BA2C3088FA00DFBEC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70DB3B92C3088FA00DFBEC2 /* Preview Assets.xcassets */; };
 		C70DB3C12C308DC200DFBEC2 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */; };
-		C70DB3C32C30BA8F00DFBEC2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3C22C30BA8F00DFBEC2 /* HomeView.swift */; };
 		C7D147632C30E2F900329856 /* Tahoma Regular font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */; };
 		C7D147692C317AEC00329856 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D147682C317AEC00329856 /* SideMenuView.swift */; };
 		C7D1476B2C317BE300329856 /* SideMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D1476A2C317BE300329856 /* SideMenuHeader.swift */; };
@@ -23,13 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C70C424E2C31DDEF00800E51 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = "../Main Views/HomeView.swift"; sourceTree = "<group>"; };
+		C70C42542C31E0C100800E51 /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
+		C70C42582C31E0DA00800E51 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
 		C70DB3AD2C3088F900DFBEC2 /* The Mountaineers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Mountaineers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_MountaineersApp.swift; sourceTree = "<group>"; };
 		C70DB3B22C3088F900DFBEC2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C70DB3B92C3088FA00DFBEC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
-		C70DB3C22C30BA8F00DFBEC2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tahoma Regular font.ttf"; sourceTree = "<group>"; };
 		C7D147682C317AEC00329856 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		C7D1476A2C317BE300329856 /* SideMenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeader.swift; sourceTree = "<group>"; };
@@ -69,14 +73,13 @@
 		C70DB3AF2C3088F900DFBEC2 /* The Mountaineers */ = {
 			isa = PBXGroup;
 			children = (
-				C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */,
 				C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */,
-				C70DB3B22C3088F900DFBEC2 /* LoginView.swift */,
-				C70DB3C22C30BA8F00DFBEC2 /* HomeView.swift */,
-				C7D147682C317AEC00329856 /* SideMenuView.swift */,
+				C7D1477E2C31DD1600329856 /* Primary Views */,
+				C7D1477D2C31DCF200329856 /* Secondary Views */,
 				C7D1476C2C317D0700329856 /* Extras */,
 				C7D1475D2C30CD9600329856 /* Fonts */,
 				C70DB3B82C3088FA00DFBEC2 /* Preview Content */,
+				C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */,
 			);
 			path = "The Mountaineers";
 			sourceTree = "<group>";
@@ -132,6 +135,25 @@
 				C7D147782C319B6000329856 /* SideMenuOption.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C7D1477D2C31DCF200329856 /* Secondary Views */ = {
+			isa = PBXGroup;
+			children = (
+				C70C42542C31E0C100800E51 /* ActivitiesView.swift */,
+				C70C42582C31E0DA00800E51 /* CoursesView.swift */,
+			);
+			path = "Secondary Views";
+			sourceTree = "<group>";
+		};
+		C7D1477E2C31DD1600329856 /* Primary Views */ = {
+			isa = PBXGroup;
+			children = (
+				C70C424E2C31DDEF00800E51 /* HomeView.swift */,
+				C7D147682C317AEC00329856 /* SideMenuView.swift */,
+				C70DB3B22C3088F900DFBEC2 /* LoginView.swift */,
+			);
+			path = "Primary Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70C424F2C31DDEF00800E51 /* HomeView.swift in Sources */,
 				C7D147772C319A7900329856 /* SideMenuDataService.swift in Sources */,
+				C70C42552C31E0C100800E51 /* ActivitiesView.swift in Sources */,
+				C70C42592C31E0DA00800E51 /* CoursesView.swift in Sources */,
 				C70DB3B32C3088F900DFBEC2 /* LoginView.swift in Sources */,
-				C70DB3C32C30BA8F00DFBEC2 /* HomeView.swift in Sources */,
 				C7D147692C317AEC00329856 /* SideMenuView.swift in Sources */,
 				C70DB3B12C3088F900DFBEC2 /* The_MountaineersApp.swift in Sources */,
 				C7D147792C319B6000329856 /* SideMenuOption.swift in Sources */,

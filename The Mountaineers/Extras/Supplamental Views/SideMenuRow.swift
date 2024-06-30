@@ -2,8 +2,6 @@
 //  SideMenuRow.swift
 //  The Mountaineers
 //
-//  Created by Hong Huang on 6/30/24.
-//
 
 import SwiftUI
 

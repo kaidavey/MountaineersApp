@@ -10,8 +10,8 @@ import UIKit
 struct LoginView: View {
     
     @EnvironmentObject var loginManager: LoginManager
-    @State var username: String = ""
-    @State var password: String = ""
+    @State private var newUsername: String = ""
+    @State private var newPassword: String = ""
     @State private var isSecured: Bool = true
     @State private var isValid: Bool = false
     @State private var showError: Bool = false
@@ -20,7 +20,7 @@ struct LoginView: View {
         NavigationStack  {
             ZStack {
                 Color(.systemGray4).ignoresSafeArea()
-                VStack(spacing: 0.0) {
+                VStack {
                     Spacer()
                     
                     Image("logo")
@@ -36,8 +36,8 @@ struct LoginView: View {
                             .frame(width: 340, height: 80)
                             .cornerRadius(5)
                         VStack(spacing: 15.0) {
-                            TextField("", text: $username, prompt: Text("Enter Username").foregroundStyle(.white))
-                                .foregroundColor(.white)
+                            TextField("", text: $newUsername, prompt: Text("Enter Username").foregroundStyle(.white))
+                                .foregroundStyle(.white)
                                 .font(.custom("Tahoma", size: 18))
                                 .textInputAutocapitalization(.never)
                                 .disableAutocorrection(true)
@@ -45,11 +45,10 @@ struct LoginView: View {
                             
                             HStack {
                                 if isSecured {
-                                    SecureField("", text: $password, prompt: Text("Enter Password").foregroundStyle(.white))
+                                    SecureField("", text: $newPassword, prompt: Text("Enter Password").foregroundStyle(.white))
                                 } else {
-                                    TextField("", text: $password, prompt: Text("Enter Password").foregroundStyle(.white))
+                                    TextField("", text: $newPassword, prompt: Text("Enter Password").foregroundStyle(.white))
                                 }
-                                
                                 
                                 Spacer()
                                 
@@ -60,12 +59,12 @@ struct LoginView: View {
                                         .accentColor(.white)
                                 }
                             }
-                            .foregroundColor(.white)
+                            .foregroundStyle(.white)
                             .font(.custom("Tahoma", size: 18))
                             .textInputAutocapitalization(.never)
                             .disableAutocorrection(true)
                             .padding(.horizontal, 50)
-                            
+
                         }
                         Rectangle()
                             .foregroundColor(.white)
@@ -74,7 +73,7 @@ struct LoginView: View {
                     }
                     
                     Button(action: {
-                        isValid = loginManager.isValidUser(username: username, password: password)
+                        isValid = loginManager.isValidUser(username: newUsername, password: newPassword)
                         showError = !isValid
                     }) {
                         Text("Login")
@@ -86,6 +85,8 @@ struct LoginView: View {
                             .padding(.top, 30)
                     }
                     
+                    Spacer()
+                    
                     if showError {
                         Text("Invalid username or password. Please try again.")
                             .font(.custom("Tahoma", fixedSize: 18))
@@ -93,19 +94,16 @@ struct LoginView: View {
                             .padding()
                     }
                     
-                    NavigationLink(
-                        destination:
+                    if isValid {
+                        NavigationLink {
                             HomeView()
-                            .navigationBarBackButtonHidden(true)
-                            .environmentObject(loginManager),
-                        isActive: $isValid,
-                        label: {
+                                .environmentObject(loginManager)
+                                .navigationBarBackButtonHidden(true)
+                        } label: {
                             EmptyView()
                         }
-                    )
-                    .hidden()
-                    
-                    Spacer()
+                        .hidden()
+                    }
                 }
             }
         }
