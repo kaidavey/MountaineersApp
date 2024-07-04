@@ -4,6 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>interstate-bold-cond-58b64162258ca.otf</string>
+		<string>New Spirit Regular.otf</string>
 		<string>Tahoma Regular font.ttf</string>
 		<string>tahomabd.ttf</string>
 	</array>

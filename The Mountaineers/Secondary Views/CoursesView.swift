@@ -2,6 +2,8 @@
 //  CoursesView.swift
 //  The Mountaineers
 //
+//  Created by Hong Huang on 7/2/24.
+//
 
 import SwiftUI
 

@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.9.1)
+  - SwiftCSVExport (2.6.0)
+  - SwiftLoggly (1.1.0)
+  - SwiftSoup (2.7.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - SwiftCSVExport (= 2.6.0)
+  - SwiftLoggly
+  - SwiftSoup
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SwiftCSVExport
+    - SwiftLoggly
+    - SwiftSoup
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  SwiftCSVExport: d9db3fb80484115028792f8d539445e3fb2c0ecb
+  SwiftLoggly: 2e57a2e4fe35ce406574d0479a3654753f480254
+  SwiftSoup: 4164c6bd8af69acd119c23fb36906975a60d71bb
+
+PODFILE CHECKSUM: 3e98fbde4c7ae55753101e31d58ad44bf7441355
+
+COCOAPODS: 1.15.2

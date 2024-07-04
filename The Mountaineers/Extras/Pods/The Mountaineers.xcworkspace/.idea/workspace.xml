@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6789799c-4d59-4958-9143-e5c49d8d340b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../The Mountaineers/Services/LoginService.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The Mountaineers.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../The Mountaineers.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The Mountaineers.xcodeproj/xcuserdata/honghuang.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../The Mountaineers.xcodeproj/xcuserdata/honghuang.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The Mountaineers/Extras/Managers/LoginManager.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The Mountaineers/Extras/Models/SideMenuDataService.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../The Mountaineers/Services/SideMenuDataService.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The Mountaineers/Extras/Models/SideMenuOption.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../The Mountaineers/Models/SideMenuOption.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The Mountaineers/Extras/Supplamental Views/SideMenuHeader.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../The Mountaineers/Supplamental Views/SideMenuHeader.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The Mountaineers/Extras/Supplamental Views/SideMenuRow.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../The Mountaineers/Supplamental Views/SideMenuRow.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The Mountaineers/Fonts/Tahoma Regular font.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../The Mountaineers/Extras/Fonts/Tahoma Regular font.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The Mountaineers/Fonts/tahomabd.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../The Mountaineers/Extras/Fonts/tahomabd.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The Mountaineers/Main Views/HomeView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../The Mountaineers/Main Views/HomeView.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The Mountaineers/Primary Views/LoginView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../The Mountaineers/Primary Views/LoginView.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The Mountaineers/Primary Views/SideMenuView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../The Mountaineers/Primary Views/SideMenuView.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../The Mountaineers/The_MountaineersApp.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../The Mountaineers/The_MountaineersApp.swift" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2idTep4FTb48zCEjvIq2xRVIJSS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-2f79fb23" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6789799c-4d59-4958-9143-e5c49d8d340b" name="Changes" comment="" />
+      <created>1719819552554</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719819552554</updated>
+      <workItem from="1719819554236" duration="187000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

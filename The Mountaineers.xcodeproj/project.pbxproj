@@ -8,16 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		C70C424F2C31DDEF00800E51 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C424E2C31DDEF00800E51 /* HomeView.swift */; };
-		C70C42552C31E0C100800E51 /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C42542C31E0C100800E51 /* ActivitiesView.swift */; };
-		C70C42592C31E0DA00800E51 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C42582C31E0DA00800E51 /* CoursesView.swift */; };
 		C70DB3B12C3088F900DFBEC2 /* The_MountaineersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */; };
 		C70DB3B32C3088F900DFBEC2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B22C3088F900DFBEC2 /* LoginView.swift */; };
 		C70DB3B72C3088FA00DFBEC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */; };
 		C70DB3BA2C3088FA00DFBEC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70DB3B92C3088FA00DFBEC2 /* Preview Assets.xcassets */; };
 		C70DB3C12C308DC200DFBEC2 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */; };
+		C70F3D842C3390E500138072 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D832C3390E500138072 /* SideMenuView.swift */; };
+		C70F3D8C2C34723800138072 /* SubHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D8B2C34723800138072 /* SubHomeView.swift */; };
+		C70F3D8E2C347D8400138072 /* ActivityTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D8D2C347D8400138072 /* ActivityTileView.swift */; };
+		C70F3D902C34979200138072 /* interstate-bold-cond-58b64162258ca.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70F3D8F2C34979200138072 /* interstate-bold-cond-58b64162258ca.otf */; };
+		C70F3D922C349AE500138072 /* ActivityTileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D912C349AE500138072 /* ActivityTileDataService.swift */; };
+		C70F3D952C34A24A00138072 /* ClimbingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D942C34A24A00138072 /* ClimbingView.swift */; };
+		C70F3D972C34A26700138072 /* BackcountrySkiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D962C34A26700138072 /* BackcountrySkiView.swift */; };
+		C70F3D992C34A27500138072 /* BikepackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D982C34A27500138072 /* BikepackingView.swift */; };
+		C70F3D9B2C34A28600138072 /* CanyoningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D9A2C34A28600138072 /* CanyoningView.swift */; };
+		C70F3D9D2C34A29A00138072 /* XCSkiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D9C2C34A29A00138072 /* XCSkiView.swift */; };
+		C70F3D9F2C34A2A900138072 /* GlobalAdventuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D9E2C34A2A900138072 /* GlobalAdventuresView.swift */; };
+		C70F3DA12C34A2B700138072 /* HikeBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DA02C34A2B700138072 /* HikeBackpackView.swift */; };
+		C70F3DA32C34A2C100138072 /* NaturalistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DA22C34A2C100138072 /* NaturalistView.swift */; };
+		C70F3DA52C34A2DB00138072 /* NightSkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DA42C34A2DB00138072 /* NightSkyView.swift */; };
+		C70F3DA72C34A2E900138072 /* PackraftingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DA62C34A2E900138072 /* PackraftingView.swift */; };
+		C70F3DA92C34A2FA00138072 /* PhotographyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DA82C34A2FA00138072 /* PhotographyView.swift */; };
+		C70F3DAB2C34A35A00138072 /* SailingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DAA2C34A35A00138072 /* SailingView.swift */; };
+		C70F3DAD2C34A36400138072 /* ScramblingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DAC2C34A36400138072 /* ScramblingView.swift */; };
+		C70F3DAF2C34A37000138072 /* SeaKayakingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DAE2C34A37000138072 /* SeaKayakingView.swift */; };
+		C70F3DB12C34A38200138072 /* SnowshoeingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DB02C34A38200138072 /* SnowshoeingView.swift */; };
+		C70F3DB32C34A39D00138072 /* StewardshipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DB22C34A39D00138072 /* StewardshipView.swift */; };
+		C70F3DB52C34A3A900138072 /* TrailRunningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DB42C34A3A900138072 /* TrailRunningView.swift */; };
+		C70F3DB72C34A3B900138072 /* UrbanWalkAdventuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DB62C34A3B900138072 /* UrbanWalkAdventuresView.swift */; };
+		C70F3DB92C34A3C700138072 /* YouthFamilyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DB82C34A3C700138072 /* YouthFamilyView.swift */; };
+		C70F3DBD2C34B3CB00138072 /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DBC2C34B3CB00138072 /* ActivitiesView.swift */; };
+		C70F3DBF2C34B3D400138072 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DBE2C34B3D400138072 /* CoursesView.swift */; };
+		C70F3DC12C34B3F700138072 /* ConservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DC02C34B3F700138072 /* ConservationView.swift */; };
+		C70F3DC32C34B40300138072 /* VolunteerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DC22C34B40300138072 /* VolunteerView.swift */; };
+		C70F3DC52C34B40D00138072 /* YouthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DC42C34B40D00138072 /* YouthView.swift */; };
+		C70F3DC72C34B41900138072 /* MembershipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DC62C34B41900138072 /* MembershipView.swift */; };
+		C70F3DC92C34B42900138072 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DC82C34B42900138072 /* LocationsView.swift */; };
+		C70F3DCB2C34B43300138072 /* LodgesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DCA2C34B43300138072 /* LodgesView.swift */; };
+		C70F3DCD2C34B44600138072 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DCC2C34B44600138072 /* EventsView.swift */; };
+		C70F3DCF2C34B44E00138072 /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DCE2C34B44E00138072 /* BlogView.swift */; };
+		C70F3DD12C34B45800138072 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DD02C34B45800138072 /* AboutView.swift */; };
+		C70F3DD32C34C0F400138072 /* New Spirit Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70F3DD22C34C0F400138072 /* New Spirit Regular.otf */; };
 		C7D147632C30E2F900329856 /* Tahoma Regular font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */; };
-		C7D147692C317AEC00329856 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D147682C317AEC00329856 /* SideMenuView.swift */; };
-		C7D1476B2C317BE300329856 /* SideMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D1476A2C317BE300329856 /* SideMenuHeader.swift */; };
+		C7D1476B2C317BE300329856 /* SideMenuFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D1476A2C317BE300329856 /* SideMenuFooter.swift */; };
 		C7D147722C3195A900329856 /* tahomabd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7D147712C3195A900329856 /* tahomabd.ttf */; };
 		C7D147742C31992500329856 /* SideMenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D147732C31992500329856 /* SideMenuRow.swift */; };
 		C7D147772C319A7900329856 /* SideMenuDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D147762C319A7900329856 /* SideMenuDataService.swift */; };
@@ -26,17 +59,50 @@
 
 /* Begin PBXFileReference section */
 		C70C424E2C31DDEF00800E51 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = "../Main Views/HomeView.swift"; sourceTree = "<group>"; };
-		C70C42542C31E0C100800E51 /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
-		C70C42582C31E0DA00800E51 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
 		C70DB3AD2C3088F900DFBEC2 /* The Mountaineers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Mountaineers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_MountaineersApp.swift; sourceTree = "<group>"; };
 		C70DB3B22C3088F900DFBEC2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C70DB3B92C3088FA00DFBEC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		C70F3D832C3390E500138072 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		C70F3D8B2C34723800138072 /* SubHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubHomeView.swift; sourceTree = "<group>"; };
+		C70F3D8D2C347D8400138072 /* ActivityTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTileView.swift; sourceTree = "<group>"; };
+		C70F3D8F2C34979200138072 /* interstate-bold-cond-58b64162258ca.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "interstate-bold-cond-58b64162258ca.otf"; sourceTree = "<group>"; };
+		C70F3D912C349AE500138072 /* ActivityTileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTileDataService.swift; sourceTree = "<group>"; };
+		C70F3D942C34A24A00138072 /* ClimbingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingView.swift; sourceTree = "<group>"; };
+		C70F3D962C34A26700138072 /* BackcountrySkiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackcountrySkiView.swift; sourceTree = "<group>"; };
+		C70F3D982C34A27500138072 /* BikepackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikepackingView.swift; sourceTree = "<group>"; };
+		C70F3D9A2C34A28600138072 /* CanyoningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanyoningView.swift; sourceTree = "<group>"; };
+		C70F3D9C2C34A29A00138072 /* XCSkiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCSkiView.swift; sourceTree = "<group>"; };
+		C70F3D9E2C34A2A900138072 /* GlobalAdventuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAdventuresView.swift; sourceTree = "<group>"; };
+		C70F3DA02C34A2B700138072 /* HikeBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBackpackView.swift; sourceTree = "<group>"; };
+		C70F3DA22C34A2C100138072 /* NaturalistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturalistView.swift; sourceTree = "<group>"; };
+		C70F3DA42C34A2DB00138072 /* NightSkyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightSkyView.swift; sourceTree = "<group>"; };
+		C70F3DA62C34A2E900138072 /* PackraftingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackraftingView.swift; sourceTree = "<group>"; };
+		C70F3DA82C34A2FA00138072 /* PhotographyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographyView.swift; sourceTree = "<group>"; };
+		C70F3DAA2C34A35A00138072 /* SailingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailingView.swift; sourceTree = "<group>"; };
+		C70F3DAC2C34A36400138072 /* ScramblingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScramblingView.swift; sourceTree = "<group>"; };
+		C70F3DAE2C34A37000138072 /* SeaKayakingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaKayakingView.swift; sourceTree = "<group>"; };
+		C70F3DB02C34A38200138072 /* SnowshoeingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowshoeingView.swift; sourceTree = "<group>"; };
+		C70F3DB22C34A39D00138072 /* StewardshipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StewardshipView.swift; sourceTree = "<group>"; };
+		C70F3DB42C34A3A900138072 /* TrailRunningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailRunningView.swift; sourceTree = "<group>"; };
+		C70F3DB62C34A3B900138072 /* UrbanWalkAdventuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanWalkAdventuresView.swift; sourceTree = "<group>"; };
+		C70F3DB82C34A3C700138072 /* YouthFamilyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouthFamilyView.swift; sourceTree = "<group>"; };
+		C70F3DBC2C34B3CB00138072 /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
+		C70F3DBE2C34B3D400138072 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
+		C70F3DC02C34B3F700138072 /* ConservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConservationView.swift; sourceTree = "<group>"; };
+		C70F3DC22C34B40300138072 /* VolunteerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerView.swift; sourceTree = "<group>"; };
+		C70F3DC42C34B40D00138072 /* YouthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouthView.swift; sourceTree = "<group>"; };
+		C70F3DC62C34B41900138072 /* MembershipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipView.swift; sourceTree = "<group>"; };
+		C70F3DC82C34B42900138072 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		C70F3DCA2C34B43300138072 /* LodgesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LodgesView.swift; sourceTree = "<group>"; };
+		C70F3DCC2C34B44600138072 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		C70F3DCE2C34B44E00138072 /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
+		C70F3DD02C34B45800138072 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		C70F3DD22C34C0F400138072 /* New Spirit Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "New Spirit Regular.otf"; sourceTree = "<group>"; };
 		C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tahoma Regular font.ttf"; sourceTree = "<group>"; };
-		C7D147682C317AEC00329856 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
-		C7D1476A2C317BE300329856 /* SideMenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeader.swift; sourceTree = "<group>"; };
+		C7D1476A2C317BE300329856 /* SideMenuFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuFooter.swift; sourceTree = "<group>"; };
 		C7D147712C3195A900329856 /* tahomabd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tahomabd.ttf; sourceTree = "<group>"; };
 		C7D147732C31992500329856 /* SideMenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRow.swift; sourceTree = "<group>"; };
 		C7D147762C319A7900329856 /* SideMenuDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuDataService.swift; sourceTree = "<group>"; };
@@ -75,7 +141,8 @@
 			children = (
 				C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */,
 				C7D1477E2C31DD1600329856 /* Primary Views */,
-				C7D1477D2C31DCF200329856 /* Secondary Views */,
+				C70F3DBB2C34B09500138072 /* Secondary Views */,
+				C70F3D932C34A1B500138072 /* Tertiary Views */,
 				C7D1476C2C317D0700329856 /* Extras */,
 				C7D1475D2C30CD9600329856 /* Fonts */,
 				C70DB3B82C3088FA00DFBEC2 /* Preview Content */,
@@ -92,11 +159,57 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C70F3D932C34A1B500138072 /* Tertiary Views */ = {
+			isa = PBXGroup;
+			children = (
+				C70F3D962C34A26700138072 /* BackcountrySkiView.swift */,
+				C70F3D982C34A27500138072 /* BikepackingView.swift */,
+				C70F3D9A2C34A28600138072 /* CanyoningView.swift */,
+				C70F3D942C34A24A00138072 /* ClimbingView.swift */,
+				C70F3D9C2C34A29A00138072 /* XCSkiView.swift */,
+				C70F3D9E2C34A2A900138072 /* GlobalAdventuresView.swift */,
+				C70F3DA02C34A2B700138072 /* HikeBackpackView.swift */,
+				C70F3DA22C34A2C100138072 /* NaturalistView.swift */,
+				C70F3DA42C34A2DB00138072 /* NightSkyView.swift */,
+				C70F3DA62C34A2E900138072 /* PackraftingView.swift */,
+				C70F3DA82C34A2FA00138072 /* PhotographyView.swift */,
+				C70F3DAA2C34A35A00138072 /* SailingView.swift */,
+				C70F3DAC2C34A36400138072 /* ScramblingView.swift */,
+				C70F3DAE2C34A37000138072 /* SeaKayakingView.swift */,
+				C70F3DB02C34A38200138072 /* SnowshoeingView.swift */,
+				C70F3DB22C34A39D00138072 /* StewardshipView.swift */,
+				C70F3DB42C34A3A900138072 /* TrailRunningView.swift */,
+				C70F3DB62C34A3B900138072 /* UrbanWalkAdventuresView.swift */,
+				C70F3DB82C34A3C700138072 /* YouthFamilyView.swift */,
+			);
+			path = "Tertiary Views";
+			sourceTree = "<group>";
+		};
+		C70F3DBB2C34B09500138072 /* Secondary Views */ = {
+			isa = PBXGroup;
+			children = (
+				C70F3DBC2C34B3CB00138072 /* ActivitiesView.swift */,
+				C70F3DBE2C34B3D400138072 /* CoursesView.swift */,
+				C70F3DC02C34B3F700138072 /* ConservationView.swift */,
+				C70F3DC22C34B40300138072 /* VolunteerView.swift */,
+				C70F3DC42C34B40D00138072 /* YouthView.swift */,
+				C70F3DC62C34B41900138072 /* MembershipView.swift */,
+				C70F3DC82C34B42900138072 /* LocationsView.swift */,
+				C70F3DCA2C34B43300138072 /* LodgesView.swift */,
+				C70F3DCC2C34B44600138072 /* EventsView.swift */,
+				C70F3DCE2C34B44E00138072 /* BlogView.swift */,
+				C70F3DD02C34B45800138072 /* AboutView.swift */,
+			);
+			path = "Secondary Views";
+			sourceTree = "<group>";
+		};
 		C7D1475D2C30CD9600329856 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */,
 				C7D147712C3195A900329856 /* tahomabd.ttf */,
+				C70F3D8F2C34979200138072 /* interstate-bold-cond-58b64162258ca.otf */,
+				C70F3DD22C34C0F400138072 /* New Spirit Regular.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -114,8 +227,10 @@
 		C7D1476D2C317D0F00329856 /* Supplamental Views */ = {
 			isa = PBXGroup;
 			children = (
-				C7D1476A2C317BE300329856 /* SideMenuHeader.swift */,
+				C7D1476A2C317BE300329856 /* SideMenuFooter.swift */,
 				C7D147732C31992500329856 /* SideMenuRow.swift */,
+				C70F3D8B2C34723800138072 /* SubHomeView.swift */,
+				C70F3D8D2C347D8400138072 /* ActivityTileView.swift */,
 			);
 			path = "Supplamental Views";
 			sourceTree = "<group>";
@@ -133,24 +248,16 @@
 			children = (
 				C7D147762C319A7900329856 /* SideMenuDataService.swift */,
 				C7D147782C319B6000329856 /* SideMenuOption.swift */,
+				C70F3D912C349AE500138072 /* ActivityTileDataService.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		C7D1477D2C31DCF200329856 /* Secondary Views */ = {
-			isa = PBXGroup;
-			children = (
-				C70C42542C31E0C100800E51 /* ActivitiesView.swift */,
-				C70C42582C31E0DA00800E51 /* CoursesView.swift */,
-			);
-			path = "Secondary Views";
 			sourceTree = "<group>";
 		};
 		C7D1477E2C31DD1600329856 /* Primary Views */ = {
 			isa = PBXGroup;
 			children = (
 				C70C424E2C31DDEF00800E51 /* HomeView.swift */,
-				C7D147682C317AEC00329856 /* SideMenuView.swift */,
+				C70F3D832C3390E500138072 /* SideMenuView.swift */,
 				C70DB3B22C3088F900DFBEC2 /* LoginView.swift */,
 			);
 			path = "Primary Views";
@@ -214,10 +321,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70F3DD32C34C0F400138072 /* New Spirit Regular.otf in Resources */,
 				C7D147722C3195A900329856 /* tahomabd.ttf in Resources */,
 				C70DB3BA2C3088FA00DFBEC2 /* Preview Assets.xcassets in Resources */,
 				C70DB3B72C3088FA00DFBEC2 /* Assets.xcassets in Resources */,
 				C7D147632C30E2F900329856 /* Tahoma Regular font.ttf in Resources */,
+				C70F3D902C34979200138072 /* interstate-bold-cond-58b64162258ca.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,17 +337,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70F3D9B2C34A28600138072 /* CanyoningView.swift in Sources */,
 				C70C424F2C31DDEF00800E51 /* HomeView.swift in Sources */,
 				C7D147772C319A7900329856 /* SideMenuDataService.swift in Sources */,
-				C70C42552C31E0C100800E51 /* ActivitiesView.swift in Sources */,
-				C70C42592C31E0DA00800E51 /* CoursesView.swift in Sources */,
+				C70F3D972C34A26700138072 /* BackcountrySkiView.swift in Sources */,
+				C70F3DC32C34B40300138072 /* VolunteerView.swift in Sources */,
 				C70DB3B32C3088F900DFBEC2 /* LoginView.swift in Sources */,
-				C7D147692C317AEC00329856 /* SideMenuView.swift in Sources */,
+				C70F3DC52C34B40D00138072 /* YouthView.swift in Sources */,
+				C70F3DB92C34A3C700138072 /* YouthFamilyView.swift in Sources */,
+				C70F3DA32C34A2C100138072 /* NaturalistView.swift in Sources */,
+				C70F3DAF2C34A37000138072 /* SeaKayakingView.swift in Sources */,
+				C70F3DBF2C34B3D400138072 /* CoursesView.swift in Sources */,
+				C70F3DCD2C34B44600138072 /* EventsView.swift in Sources */,
+				C70F3DC92C34B42900138072 /* LocationsView.swift in Sources */,
+				C70F3DCF2C34B44E00138072 /* BlogView.swift in Sources */,
+				C70F3DA92C34A2FA00138072 /* PhotographyView.swift in Sources */,
+				C70F3DA12C34A2B700138072 /* HikeBackpackView.swift in Sources */,
+				C70F3DB32C34A39D00138072 /* StewardshipView.swift in Sources */,
+				C70F3D9D2C34A29A00138072 /* XCSkiView.swift in Sources */,
+				C70F3DC12C34B3F700138072 /* ConservationView.swift in Sources */,
+				C70F3DCB2C34B43300138072 /* LodgesView.swift in Sources */,
 				C70DB3B12C3088F900DFBEC2 /* The_MountaineersApp.swift in Sources */,
+				C70F3DA72C34A2E900138072 /* PackraftingView.swift in Sources */,
+				C70F3DD12C34B45800138072 /* AboutView.swift in Sources */,
+				C70F3DB12C34A38200138072 /* SnowshoeingView.swift in Sources */,
+				C70F3D842C3390E500138072 /* SideMenuView.swift in Sources */,
+				C70F3DAD2C34A36400138072 /* ScramblingView.swift in Sources */,
+				C70F3D9F2C34A2A900138072 /* GlobalAdventuresView.swift in Sources */,
+				C70F3D8E2C347D8400138072 /* ActivityTileView.swift in Sources */,
+				C70F3D8C2C34723800138072 /* SubHomeView.swift in Sources */,
+				C70F3D922C349AE500138072 /* ActivityTileDataService.swift in Sources */,
+				C70F3DA52C34A2DB00138072 /* NightSkyView.swift in Sources */,
+				C70F3DB72C34A3B900138072 /* UrbanWalkAdventuresView.swift in Sources */,
 				C7D147792C319B6000329856 /* SideMenuOption.swift in Sources */,
-				C7D1476B2C317BE300329856 /* SideMenuHeader.swift in Sources */,
+				C7D1476B2C317BE300329856 /* SideMenuFooter.swift in Sources */,
+				C70F3D952C34A24A00138072 /* ClimbingView.swift in Sources */,
 				C7D147742C31992500329856 /* SideMenuRow.swift in Sources */,
 				C70DB3C12C308DC200DFBEC2 /* LoginManager.swift in Sources */,
+				C70F3DAB2C34A35A00138072 /* SailingView.swift in Sources */,
+				C70F3D992C34A27500138072 /* BikepackingView.swift in Sources */,
+				C70F3DB52C34A3A900138072 /* TrailRunningView.swift in Sources */,
+				C70F3DC72C34B41900138072 /* MembershipView.swift in Sources */,
+				C70F3DBD2C34B3CB00138072 /* ActivitiesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
