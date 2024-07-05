@@ -29,7 +29,7 @@ struct HomeView: View {
                                 Text("GET OUTSIDE WITH US")
                                     .font(.custom("Tahoma-Bold", size: 26))
                                     .foregroundStyle(.white)
-                                    .padding(.leading, 10)
+                                    .padding([.leading, .bottom], 15)
                                 
                                 Spacer()
                             }
