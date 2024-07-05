@@ -23,7 +23,7 @@ struct SubHomeView: View {
                         .font(.custom("New Spirit", size: 16))
                         .padding([.trailing, .bottom, .leading], 20)
                         .padding(.top, 10)
-                        .foregroundStyle(.black)
+                        .foregroundStyle(.dynamicBlack)
                         .lineSpacing(5)
                     
                     LazyVGrid(columns: columns, spacing: 20) {

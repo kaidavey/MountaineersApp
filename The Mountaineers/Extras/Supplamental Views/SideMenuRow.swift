@@ -8,8 +8,7 @@ import SwiftUI
 struct SideMenuRow: View {
     
     let option: SideMenuOption
-    @Binding var selectedTitle: SideMenuOption
-    
+
     var body: some View {
         if (option.isFontLarge) {
             HStack {
@@ -43,9 +42,5 @@ struct SideMenuRow: View {
             .padding(.leading, 20)
             .frame(width: 216, height: 20)
         }
-    }
-    
-    private var isSelected: Bool {
-        return selectedTitle.name == option.name
     }
 }

@@ -40,7 +40,7 @@ struct HomeView: View {
                     SubHomeView()
                 }
                 
-                SideMenuView(isShowing: $showMenu, selectedTab: $selectedTab, selectedTitle: arr[0])
+                SideMenuView(isShowing: $showMenu, selectedTab: $selectedTab)
                     .environmentObject(loginManager)
             }
             .toolbar {

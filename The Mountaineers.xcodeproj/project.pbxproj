@@ -165,8 +165,8 @@
 		C7D1476C2C317D0700329856 /* Extras */ = {
 			isa = PBXGroup;
 			children = (
-				C7D1476E2C317D1F00329856 /* Managers */,
 				C7D147752C319A6200329856 /* Models */,
+				C7D1476E2C317D1F00329856 /* Managers */,
 				C7D1476D2C317D0F00329856 /* Supplamental Views */,
 			);
 			path = Extras;

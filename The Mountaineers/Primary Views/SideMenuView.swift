@@ -10,15 +10,14 @@ struct SideMenuView: View {
     @EnvironmentObject var loginManager: LoginManager
     @Binding var isShowing: Bool
     @Binding var selectedTab: SideMenuOption
-    @State var selectedTitle: SideMenuOption
     
     var body: some View {
-        NavigationStack {
             ZStack {
                 if isShowing {
                     Rectangle()
                         .opacity(0.3)
                         .ignoresSafeArea()
+                        .foregroundColor(.black)
                         .onTapGesture {
                             isShowing.toggle()
                         }
@@ -32,22 +31,25 @@ struct SideMenuView: View {
                             
                             let titleData: [SideMenuOption] = SideMenuDataService.getData()
                             
-                            VStack {
-                                ForEach(titleData) { option in
-                                    if option.name.count > 0 {
-                                        Button {
-                                            selectedTitle = option
-                                            isShowing = false
-                                            selectedTab = option
-                                        } label: {
-                                            SideMenuRow(option: option, selectedTitle: $selectedTitle)
+                            NavigationStack {
+                                VStack {
+                                    ForEach(titleData) { option in
+                                        if option.name.count > 0 {
+                                            NavigationLink {
+                                                option.view
+                                            } label: {
+                                                SideMenuRow(option: option)
+                                            }
+                                            .onSubmit {
+                                                isShowing = false
+                                                selectedTab = option
+                                            }
+                                        } else {
+                                            SideMenuRow(option: option)
                                         }
-                                    } else {
-                                        SideMenuRow(option: option, selectedTitle: $selectedTitle)
                                     }
                                 }
                             }
-                            
                             Spacer()
                             
                             SideMenuFooter()
@@ -66,6 +68,5 @@ struct SideMenuView: View {
             .transition(.move(edge: .leading))
             .animation(.linear, value: isShowing)
         }
-    }
 }
 
