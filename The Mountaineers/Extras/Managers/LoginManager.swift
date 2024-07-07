@@ -8,7 +8,6 @@ import SwiftData
 import SwiftUI
 
 class LoginManager: ObservableObject {
-    
     @Published private(set) var username: String = ""
     @Published private(set) var password: String = ""
     @AppStorage("loggedInUser") private var loggedInUsername: String = ""

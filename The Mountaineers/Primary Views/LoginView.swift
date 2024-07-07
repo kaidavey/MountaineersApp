@@ -8,7 +8,6 @@ import SwiftData
 import UIKit
 
 struct LoginView: View {
-    
     @EnvironmentObject var loginManager: LoginManager
     @State private var newUsername: String = ""
     @State private var newPassword: String = ""

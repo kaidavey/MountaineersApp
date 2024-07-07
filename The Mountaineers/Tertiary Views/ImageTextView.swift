@@ -2,13 +2,10 @@
 //  ImageTextView.swift
 //  The Mountaineers
 //
-//  Created by Hong Huang on 7/5/24.
-//
 
 import SwiftUI
 
 struct ImageTextView: View {
-    
     @Environment(\.dismiss) var dismiss
     var title: String
     

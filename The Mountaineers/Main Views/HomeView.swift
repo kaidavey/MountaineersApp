@@ -6,7 +6,6 @@
 import SwiftUI
 
 struct HomeView: View {
-    
     @EnvironmentObject var loginManager: LoginManager
     @State private var showMenu = false
     @State private var selectedTab: SideMenuOption = SideMenuDataService.getData()[0]

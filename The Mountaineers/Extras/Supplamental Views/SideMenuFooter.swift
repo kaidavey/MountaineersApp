@@ -6,7 +6,6 @@
 import SwiftUI
 
 struct SideMenuFooter: View {
-    
     @EnvironmentObject var loginManager: LoginManager
     
     var body: some View {

@@ -6,7 +6,6 @@
 import SwiftUI
 
 struct SideMenuView: View {
-    
     @EnvironmentObject var loginManager: LoginManager
     @Binding var isShowing: Bool
     @Binding var selectedTab: SideMenuOption

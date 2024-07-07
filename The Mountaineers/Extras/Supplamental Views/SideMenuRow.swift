@@ -6,7 +6,6 @@
 import SwiftUI
 
 struct SideMenuRow: View {
-    
     let option: SideMenuOption
 
     var body: some View {
