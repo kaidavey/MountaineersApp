@@ -14,7 +14,7 @@ struct The_MountaineersApp: App {
     var body: some Scene {
         WindowGroup {
             if loginManager.hasStoredData() {
-                HomeView()
+                MainView()
                     .environmentObject(loginManager)
             } else {
                 LoginView()

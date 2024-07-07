@@ -13,7 +13,7 @@ struct SideMenuFooter: View {
             Image(systemName: "person.crop.circle.fill")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 36, height: 36)
+                .frame(width: 38, height: 38)
                 .foregroundStyle(.gray)
             Text(loginManager.getUsername())
                 .font(.custom("Tahoma-Bold", size: 16))

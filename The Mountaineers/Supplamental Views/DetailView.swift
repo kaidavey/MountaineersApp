@@ -1,12 +1,13 @@
 //
-//  ImageTextView.swift
+//  Detail.swift
 //  The Mountaineers
 //
 
 import SwiftUI
 
-struct ImageTextView: View {
+struct DetailView: View {
     @Environment(\.dismiss) var dismiss
+    @ObservedObject var globalVariables = GlobalVariables.shared
     var title: String
     
     var body: some View {
@@ -21,13 +22,17 @@ struct ImageTextView: View {
                         .frame(height: 50)
                         .foregroundStyle(.darkGreen)
                         .overlay(
-                            HStack {
-                                Text(title)
-                                    .font(.custom("Tahoma-Bold", size: 26))
-                                    .foregroundStyle(.white)
-                                    .padding([.leading, .bottom], 15)
-                                
+                            VStack {
                                 Spacer()
+                                
+                                HStack {
+                                    Text(title)
+                                        .font(.custom("Tahoma-Bold", size: 26))
+                                        .foregroundStyle(.white)
+                                        .padding([.leading, .bottom], 15)
+                                    
+                                    Spacer()
+                                }
                             }
                         )
                     Spacer()
@@ -42,8 +47,8 @@ struct ImageTextView: View {
                         HStack {
                             Image(systemName: "arrow.left")
                                 .fontWeight(.semibold)
-                            //Text("Back")
-                            //    .font(.custom("Tahoma", size: 18))
+                            Text("Back")
+                                .font(.custom("Tahoma", size: 18))
                         }
                         .foregroundStyle(.white)
                     }
@@ -54,5 +59,5 @@ struct ImageTextView: View {
 }
 
 #Preview {
-    ImageTextView(title: "Example")
+    DetailView(title: "Example")
 }

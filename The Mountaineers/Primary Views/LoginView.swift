@@ -95,7 +95,7 @@ struct LoginView: View {
                     
                     if isValid {
                         NavigationLink {
-                            HomeView()
+                            MainView()
                                 .environmentObject(loginManager)
                                 .navigationBarBackButtonHidden(true)
                         } label: {

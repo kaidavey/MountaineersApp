@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C70C424F2C31DDEF00800E51 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C424E2C31DDEF00800E51 /* HomeView.swift */; };
+		C70C424F2C31DDEF00800E51 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C424E2C31DDEF00800E51 /* MainView.swift */; };
 		C70DB3B12C3088F900DFBEC2 /* The_MountaineersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */; };
 		C70DB3B32C3088F900DFBEC2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B22C3088F900DFBEC2 /* LoginView.swift */; };
 		C70DB3B72C3088FA00DFBEC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */; };
 		C70DB3BA2C3088FA00DFBEC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70DB3B92C3088FA00DFBEC2 /* Preview Assets.xcassets */; };
 		C70DB3C12C308DC200DFBEC2 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */; };
 		C70F3D842C3390E500138072 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D832C3390E500138072 /* SideMenuView.swift */; };
-		C70F3D8C2C34723800138072 /* SubHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D8B2C34723800138072 /* SubHomeView.swift */; };
 		C70F3D8E2C347D8400138072 /* ActivityTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D8D2C347D8400138072 /* ActivityTileView.swift */; };
 		C70F3D902C34979200138072 /* interstate-bold-cond-58b64162258ca.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70F3D8F2C34979200138072 /* interstate-bold-cond-58b64162258ca.otf */; };
 		C70F3D922C349AE500138072 /* ActivityTileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3D912C349AE500138072 /* ActivityTileDataService.swift */; };
@@ -22,16 +21,13 @@
 		C70F3DBF2C34B3D400138072 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DBE2C34B3D400138072 /* CoursesView.swift */; };
 		C70F3DC12C34B3F700138072 /* ConservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DC02C34B3F700138072 /* ConservationView.swift */; };
 		C70F3DC32C34B40300138072 /* VolunteerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DC22C34B40300138072 /* VolunteerView.swift */; };
-		C70F3DC52C34B40D00138072 /* YouthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DC42C34B40D00138072 /* YouthView.swift */; };
-		C70F3DC72C34B41900138072 /* MembershipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DC62C34B41900138072 /* MembershipView.swift */; };
-		C70F3DC92C34B42900138072 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DC82C34B42900138072 /* LocationsView.swift */; };
-		C70F3DCB2C34B43300138072 /* LodgesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DCA2C34B43300138072 /* LodgesView.swift */; };
-		C70F3DCD2C34B44600138072 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DCC2C34B44600138072 /* EventsView.swift */; };
-		C70F3DCF2C34B44E00138072 /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DCE2C34B44E00138072 /* BlogView.swift */; };
 		C70F3DD12C34B45800138072 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DD02C34B45800138072 /* AboutView.swift */; };
 		C70F3DD32C34C0F400138072 /* New Spirit Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70F3DD22C34C0F400138072 /* New Spirit Regular.otf */; };
-		C7A1F9AD2C37E1CF009F7DBD /* ImageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1F9AC2C37E1CF009F7DBD /* ImageTextView.swift */; };
+		C7A1F9AD2C37E1CF009F7DBD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1F9AC2C37E1CF009F7DBD /* DetailView.swift */; };
 		C7A1F9AF2C37E2E6009F7DBD /* SubHomeViewTextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1F9AE2C37E2E6009F7DBD /* SubHomeViewTextService.swift */; };
+		C7A1F9DC2C3A9C35009F7DBD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1F9DB2C3A9C35009F7DBD /* HomeView.swift */; };
+		C7A1F9DE2C3A9C45009F7DBD /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1F9DD2C3A9C45009F7DBD /* FindView.swift */; };
+		C7A1F9E02C3AA7D7009F7DBD /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1F9DF2C3AA7D7009F7DBD /* GlobalVariables.swift */; };
 		C7D147632C30E2F900329856 /* Tahoma Regular font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */; };
 		C7D1476B2C317BE300329856 /* SideMenuFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D1476A2C317BE300329856 /* SideMenuFooter.swift */; };
 		C7D147722C3195A900329856 /* tahomabd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7D147712C3195A900329856 /* tahomabd.ttf */; };
@@ -41,7 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C70C424E2C31DDEF00800E51 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = "../Main Views/HomeView.swift"; sourceTree = "<group>"; };
+		C70C424E2C31DDEF00800E51 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = "../Main Views/MainView.swift"; sourceTree = "<group>"; };
 		C70DB3AD2C3088F900DFBEC2 /* The Mountaineers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Mountaineers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_MountaineersApp.swift; sourceTree = "<group>"; };
 		C70DB3B22C3088F900DFBEC2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -49,7 +45,6 @@
 		C70DB3B92C3088FA00DFBEC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		C70F3D832C3390E500138072 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
-		C70F3D8B2C34723800138072 /* SubHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubHomeView.swift; sourceTree = "<group>"; };
 		C70F3D8D2C347D8400138072 /* ActivityTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTileView.swift; sourceTree = "<group>"; };
 		C70F3D8F2C34979200138072 /* interstate-bold-cond-58b64162258ca.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "interstate-bold-cond-58b64162258ca.otf"; sourceTree = "<group>"; };
 		C70F3D912C349AE500138072 /* ActivityTileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTileDataService.swift; sourceTree = "<group>"; };
@@ -57,16 +52,13 @@
 		C70F3DBE2C34B3D400138072 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
 		C70F3DC02C34B3F700138072 /* ConservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConservationView.swift; sourceTree = "<group>"; };
 		C70F3DC22C34B40300138072 /* VolunteerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerView.swift; sourceTree = "<group>"; };
-		C70F3DC42C34B40D00138072 /* YouthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouthView.swift; sourceTree = "<group>"; };
-		C70F3DC62C34B41900138072 /* MembershipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipView.swift; sourceTree = "<group>"; };
-		C70F3DC82C34B42900138072 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
-		C70F3DCA2C34B43300138072 /* LodgesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LodgesView.swift; sourceTree = "<group>"; };
-		C70F3DCC2C34B44600138072 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
-		C70F3DCE2C34B44E00138072 /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
 		C70F3DD02C34B45800138072 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C70F3DD22C34C0F400138072 /* New Spirit Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "New Spirit Regular.otf"; sourceTree = "<group>"; };
-		C7A1F9AC2C37E1CF009F7DBD /* ImageTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTextView.swift; sourceTree = "<group>"; };
+		C7A1F9AC2C37E1CF009F7DBD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C7A1F9AE2C37E2E6009F7DBD /* SubHomeViewTextService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubHomeViewTextService.swift; sourceTree = "<group>"; };
+		C7A1F9DB2C3A9C35009F7DBD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C7A1F9DD2C3A9C45009F7DBD /* FindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindView.swift; sourceTree = "<group>"; };
+		C7A1F9DF2C3AA7D7009F7DBD /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tahoma Regular font.ttf"; sourceTree = "<group>"; };
 		C7D1476A2C317BE300329856 /* SideMenuFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuFooter.swift; sourceTree = "<group>"; };
 		C7D147712C3195A900329856 /* tahomabd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tahomabd.ttf; sourceTree = "<group>"; };
@@ -108,7 +100,7 @@
 				C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */,
 				C7D1477E2C31DD1600329856 /* Primary Views */,
 				C70F3DBB2C34B09500138072 /* Secondary Views */,
-				C70F3D932C34A1B500138072 /* Tertiary Views */,
+				C7D1476D2C317D0F00329856 /* Supplamental Views */,
 				C7D1476C2C317D0700329856 /* Extras */,
 				C7D1475D2C30CD9600329856 /* Fonts */,
 				C70DB3B82C3088FA00DFBEC2 /* Preview Content */,
@@ -125,27 +117,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C70F3D932C34A1B500138072 /* Tertiary Views */ = {
-			isa = PBXGroup;
-			children = (
-				C7A1F9AC2C37E1CF009F7DBD /* ImageTextView.swift */,
-			);
-			path = "Tertiary Views";
-			sourceTree = "<group>";
-		};
 		C70F3DBB2C34B09500138072 /* Secondary Views */ = {
 			isa = PBXGroup;
 			children = (
+				C7A1F9DB2C3A9C35009F7DBD /* HomeView.swift */,
+				C7A1F9DD2C3A9C45009F7DBD /* FindView.swift */,
 				C70F3DBC2C34B3CB00138072 /* ActivitiesView.swift */,
 				C70F3DBE2C34B3D400138072 /* CoursesView.swift */,
 				C70F3DC02C34B3F700138072 /* ConservationView.swift */,
 				C70F3DC22C34B40300138072 /* VolunteerView.swift */,
-				C70F3DC42C34B40D00138072 /* YouthView.swift */,
-				C70F3DC62C34B41900138072 /* MembershipView.swift */,
-				C70F3DC82C34B42900138072 /* LocationsView.swift */,
-				C70F3DCA2C34B43300138072 /* LodgesView.swift */,
-				C70F3DCC2C34B44600138072 /* EventsView.swift */,
-				C70F3DCE2C34B44E00138072 /* BlogView.swift */,
 				C70F3DD02C34B45800138072 /* AboutView.swift */,
 			);
 			path = "Secondary Views";
@@ -165,9 +145,12 @@
 		C7D1476C2C317D0700329856 /* Extras */ = {
 			isa = PBXGroup;
 			children = (
-				C7D147752C319A6200329856 /* Models */,
-				C7D1476E2C317D1F00329856 /* Managers */,
-				C7D1476D2C317D0F00329856 /* Supplamental Views */,
+				C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */,
+				C7A1F9DF2C3AA7D7009F7DBD /* GlobalVariables.swift */,
+				C7D147762C319A7900329856 /* SideMenuDataService.swift */,
+				C7D147782C319B6000329856 /* SideMenuOption.swift */,
+				C70F3D912C349AE500138072 /* ActivityTileDataService.swift */,
+				C7A1F9AE2C37E2E6009F7DBD /* SubHomeViewTextService.swift */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -175,37 +158,18 @@
 		C7D1476D2C317D0F00329856 /* Supplamental Views */ = {
 			isa = PBXGroup;
 			children = (
+				C7A1F9AC2C37E1CF009F7DBD /* DetailView.swift */,
 				C7D1476A2C317BE300329856 /* SideMenuFooter.swift */,
 				C7D147732C31992500329856 /* SideMenuRow.swift */,
-				C70F3D8B2C34723800138072 /* SubHomeView.swift */,
 				C70F3D8D2C347D8400138072 /* ActivityTileView.swift */,
 			);
 			path = "Supplamental Views";
 			sourceTree = "<group>";
 		};
-		C7D1476E2C317D1F00329856 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				C70DB3C02C308DC200DFBEC2 /* LoginManager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		C7D147752C319A6200329856 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C7D147762C319A7900329856 /* SideMenuDataService.swift */,
-				C7D147782C319B6000329856 /* SideMenuOption.swift */,
-				C70F3D912C349AE500138072 /* ActivityTileDataService.swift */,
-				C7A1F9AE2C37E2E6009F7DBD /* SubHomeViewTextService.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		C7D1477E2C31DD1600329856 /* Primary Views */ = {
 			isa = PBXGroup;
 			children = (
-				C70C424E2C31DDEF00800E51 /* HomeView.swift */,
+				C70C424E2C31DDEF00800E51 /* MainView.swift */,
 				C70F3D832C3390E500138072 /* SideMenuView.swift */,
 				C70DB3B22C3088F900DFBEC2 /* LoginView.swift */,
 			);
@@ -286,30 +250,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C70C424F2C31DDEF00800E51 /* HomeView.swift in Sources */,
-				C7A1F9AD2C37E1CF009F7DBD /* ImageTextView.swift in Sources */,
+				C70C424F2C31DDEF00800E51 /* MainView.swift in Sources */,
+				C7A1F9AD2C37E1CF009F7DBD /* DetailView.swift in Sources */,
 				C7D147772C319A7900329856 /* SideMenuDataService.swift in Sources */,
 				C70F3DC32C34B40300138072 /* VolunteerView.swift in Sources */,
 				C70DB3B32C3088F900DFBEC2 /* LoginView.swift in Sources */,
-				C70F3DC52C34B40D00138072 /* YouthView.swift in Sources */,
+				C7A1F9DE2C3A9C45009F7DBD /* FindView.swift in Sources */,
 				C70F3DBF2C34B3D400138072 /* CoursesView.swift in Sources */,
-				C70F3DCD2C34B44600138072 /* EventsView.swift in Sources */,
-				C70F3DC92C34B42900138072 /* LocationsView.swift in Sources */,
-				C70F3DCF2C34B44E00138072 /* BlogView.swift in Sources */,
 				C70F3DC12C34B3F700138072 /* ConservationView.swift in Sources */,
 				C7A1F9AF2C37E2E6009F7DBD /* SubHomeViewTextService.swift in Sources */,
-				C70F3DCB2C34B43300138072 /* LodgesView.swift in Sources */,
 				C70DB3B12C3088F900DFBEC2 /* The_MountaineersApp.swift in Sources */,
 				C70F3DD12C34B45800138072 /* AboutView.swift in Sources */,
 				C70F3D842C3390E500138072 /* SideMenuView.swift in Sources */,
 				C70F3D8E2C347D8400138072 /* ActivityTileView.swift in Sources */,
-				C70F3D8C2C34723800138072 /* SubHomeView.swift in Sources */,
 				C70F3D922C349AE500138072 /* ActivityTileDataService.swift in Sources */,
 				C7D147792C319B6000329856 /* SideMenuOption.swift in Sources */,
 				C7D1476B2C317BE300329856 /* SideMenuFooter.swift in Sources */,
 				C7D147742C31992500329856 /* SideMenuRow.swift in Sources */,
 				C70DB3C12C308DC200DFBEC2 /* LoginManager.swift in Sources */,
-				C70F3DC72C34B41900138072 /* MembershipView.swift in Sources */,
+				C7A1F9E02C3AA7D7009F7DBD /* GlobalVariables.swift in Sources */,
+				C7A1F9DC2C3A9C35009F7DBD /* HomeView.swift in Sources */,
 				C70F3DBD2C34B3CB00138072 /* ActivitiesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

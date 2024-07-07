@@ -10,11 +10,12 @@ struct ActivityTileView: View, Identifiable {
     let text: String
     let imageName: String
     let viewOption: Int
-
+    @ObservedObject var globalVariables = GlobalVariables.shared
+    
     var body: some View {
         NavigationStack {
             NavigationLink {
-                ImageTextView(title: text)
+                DetailView(title: text)
             } label: {
                 ZStack {
                     Image(imageName)
