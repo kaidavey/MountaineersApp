@@ -26,7 +26,7 @@
 		C7A1F9AD2C37E1CF009F7DBD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1F9AC2C37E1CF009F7DBD /* DetailView.swift */; };
 		C7A1F9AF2C37E2E6009F7DBD /* SubHomeViewTextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1F9AE2C37E2E6009F7DBD /* SubHomeViewTextService.swift */; };
 		C7A1F9DC2C3A9C35009F7DBD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1F9DB2C3A9C35009F7DBD /* HomeView.swift */; };
-		C7A1F9DE2C3A9C45009F7DBD /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1F9DD2C3A9C45009F7DBD /* FindView.swift */; };
+		C7A1F9DE2C3A9C45009F7DBD /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1F9DD2C3A9C45009F7DBD /* ExploreView.swift */; };
 		C7A1F9E02C3AA7D7009F7DBD /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1F9DF2C3AA7D7009F7DBD /* GlobalVariables.swift */; };
 		C7D147632C30E2F900329856 /* Tahoma Regular font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */; };
 		C7D1476B2C317BE300329856 /* SideMenuFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D1476A2C317BE300329856 /* SideMenuFooter.swift */; };
@@ -57,7 +57,7 @@
 		C7A1F9AC2C37E1CF009F7DBD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C7A1F9AE2C37E2E6009F7DBD /* SubHomeViewTextService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubHomeViewTextService.swift; sourceTree = "<group>"; };
 		C7A1F9DB2C3A9C35009F7DBD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		C7A1F9DD2C3A9C45009F7DBD /* FindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindView.swift; sourceTree = "<group>"; };
+		C7A1F9DD2C3A9C45009F7DBD /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		C7A1F9DF2C3AA7D7009F7DBD /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		C7D147622C30E2F900329856 /* Tahoma Regular font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tahoma Regular font.ttf"; sourceTree = "<group>"; };
 		C7D1476A2C317BE300329856 /* SideMenuFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuFooter.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				C7A1F9DB2C3A9C35009F7DBD /* HomeView.swift */,
-				C7A1F9DD2C3A9C45009F7DBD /* FindView.swift */,
+				C7A1F9DD2C3A9C45009F7DBD /* ExploreView.swift */,
 				C70F3DBC2C34B3CB00138072 /* ActivitiesView.swift */,
 				C70F3DBE2C34B3D400138072 /* CoursesView.swift */,
 				C70F3DC02C34B3F700138072 /* ConservationView.swift */,
@@ -255,7 +255,7 @@
 				C7D147772C319A7900329856 /* SideMenuDataService.swift in Sources */,
 				C70F3DC32C34B40300138072 /* VolunteerView.swift in Sources */,
 				C70DB3B32C3088F900DFBEC2 /* LoginView.swift in Sources */,
-				C7A1F9DE2C3A9C45009F7DBD /* FindView.swift in Sources */,
+				C7A1F9DE2C3A9C45009F7DBD /* ExploreView.swift in Sources */,
 				C70F3DBF2C34B3D400138072 /* CoursesView.swift in Sources */,
 				C70F3DC12C34B3F700138072 /* ConservationView.swift in Sources */,
 				C7A1F9AF2C37E2E6009F7DBD /* SubHomeViewTextService.swift in Sources */,

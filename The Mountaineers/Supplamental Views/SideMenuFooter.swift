@@ -19,5 +19,6 @@ struct SideMenuFooter: View {
                 .font(.custom("Tahoma-Bold", size: 16))
                 .foregroundStyle(.white)
         }
+        .padding(.leading, 5)
     }
 }

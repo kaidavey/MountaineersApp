@@ -28,7 +28,7 @@ struct SideMenuView: View {
                         Image("logo")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 80)
+                            .frame(width: 85)
                             .padding(.top, 50)
                         
                         let titleData: [SideMenuOption] = SideMenuDataService.getData()

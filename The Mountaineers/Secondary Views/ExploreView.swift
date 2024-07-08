@@ -1,11 +1,11 @@
 //
-//  FindView.swift
+//  ExploreView.swift
 //  The Mountaineers
 //
 
 import SwiftUI
 
-struct FindView: View {
+struct ExploreView: View {
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible())
@@ -14,31 +14,31 @@ struct FindView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Rectangle()
+            ZStack {
+                Color(.systemGray4)
                     .ignoresSafeArea()
-                    .frame(height: 90)
-                    .foregroundStyle(.darkGreen)
-                    .overlay(
-                        VStack {
-                            Spacer()
-                            
-                            HStack {
-                                Text("GET OUTSIDE WITH US")
-                                    .font(.custom("Tahoma-Bold", size: 26))
-                                    .foregroundStyle(.white)
-                                    .padding([.leading, .bottom], 15)
-                                
-                                Spacer()
-                            }
-                        }
-                    )
-                Spacer()
-                
-                ZStack {
-                    Color
-                        .clear
+                    .opacity(0.8)
+                VStack {
+                    Rectangle()
                         .ignoresSafeArea()
+                        .frame(height: 90)
+                        .foregroundStyle(.darkGreen)
+                        .overlay(
+                            VStack {
+                                Spacer()
+                                
+                                HStack {
+                                    Text("GET OUTSIDE WITH US")
+                                        .font(.custom("Tahoma-Bold", size: 26))
+                                        .foregroundStyle(.white)
+                                        .padding([.leading, .bottom], 15)
+                                    
+                                    Spacer()
+                                }
+                            }
+                        )
+                    Spacer()
+                    
                     ScrollView {
                         Text(introText)
                             .font(.custom("New Spirit", size: 16))
@@ -54,6 +54,7 @@ struct FindView: View {
                         }
                         .padding()
                     }
+                    
                 }
             }
         }
@@ -61,5 +62,5 @@ struct FindView: View {
 }
 
 #Preview {
-    FindView()
+    ExploreView()
 }
