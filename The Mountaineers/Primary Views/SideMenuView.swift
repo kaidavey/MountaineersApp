@@ -9,7 +9,6 @@ struct SideMenuView: View {
     @EnvironmentObject var loginManager: LoginManager
     @Binding var isShowing: Bool
     @Binding var selectedTab: SideMenuOption
-    @ObservedObject var globalVariables = GlobalVariables.shared
     
     var body: some View {
         ZStack {
@@ -20,7 +19,6 @@ struct SideMenuView: View {
                     .foregroundColor(.black)
                     .onTapGesture {
                         isShowing.toggle()
-                        globalVariables.showHamburger.toggle()
                     }
                 
                 HStack {
@@ -39,7 +37,6 @@ struct SideMenuView: View {
                                     Button {
                                         selectedTab = option
                                         isShowing = false
-                                        globalVariables.showHamburger.toggle()
                                     } label: {
                                         SideMenuRow(option: option)
                                     }
@@ -53,6 +50,15 @@ struct SideMenuView: View {
                         
                         SideMenuFooter()
                             .environmentObject(loginManager)
+                        
+                        Button {
+                            loginManager.logOut()
+                        } label: {
+                            Text("Log Out")
+                                .font(.custom("Tahoma-Bold", size: 16))
+                                .foregroundStyle(.red)
+                                .padding([.leading, .bottom], 10)
+                        }
                     }
                     .padding(.leading, 16)
                     .frame(width: 250, alignment: .leading)

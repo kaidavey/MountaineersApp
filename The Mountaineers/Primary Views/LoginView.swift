@@ -20,12 +20,11 @@ struct LoginView: View {
             ZStack {
                 Color(.systemGray4).ignoresSafeArea()
                 VStack {
-                    Spacer()
-                    
-                    Image("logo")
+                    Image("logo2")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 200)
+                        .frame(width: 330)
+                        .padding(.top, 100)
                     
                     Spacer()
                     
@@ -34,7 +33,7 @@ struct LoginView: View {
                             .foregroundColor(.darkBlue)
                             .frame(width: 340, height: 80)
                             .cornerRadius(5)
-                        VStack(spacing: 15.0) {
+                        VStack(spacing: 14.0) {
                             TextField("", text: $newUsername, prompt: Text("Enter Username").foregroundStyle(.white))
                                 .foregroundStyle(.white)
                                 .font(.custom("Tahoma", size: 18))
@@ -84,7 +83,15 @@ struct LoginView: View {
                             .padding(.top, 30)
                     }
                     
-                    Spacer()
+                    HStack(spacing: 0.7) {
+                        Text("Don't have an account? Make one ")
+                            .font(.custom("Tahoma", size: 16))
+                            .foregroundStyle(.darkGray)
+                        Link("here.", destination: URL(string: "https://www.mountaineers.org/membership/join-the-mountaineers")!)
+                            .font(.custom("Tahoma", size: 16))
+                            .foregroundStyle(.darkBlue)
+                    }
+                    .padding(40)
                     
                     if showError {
                         Text("Invalid username or password. Please try again.")

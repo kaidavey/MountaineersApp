@@ -9,7 +9,6 @@ struct MainView: View {
     @EnvironmentObject var loginManager: LoginManager
     @State private var showMenu = false
     @State private var selectedTab: SideMenuOption = SideMenuDataService.getData()[0]
-    @ObservedObject var globalVariables = GlobalVariables.shared
     
     var body: some View {
         ZStack {            
@@ -25,7 +24,6 @@ struct MainView: View {
             
             Button {
                 showMenu.toggle()
-                globalVariables.showHamburger.toggle()
             } label: {
                     Image(systemName: "line.horizontal.3")
                     .imageScale(.large)
@@ -34,7 +32,6 @@ struct MainView: View {
             }
             .padding()
             .position(x: 30, y: 20)
-            .opacity(globalVariables.showHamburger ? 1 : 0)
         }
     }
 }

@@ -15,13 +15,13 @@ struct VolunteerView: View {
                 Rectangle()
                     .ignoresSafeArea()
                     .frame(height: 90)
-                    .foregroundStyle(.darkMagenta)
+                    .foregroundStyle(.darkPurple)
                     .overlay(
                         VStack {
                             Spacer()
                             
                             HStack {
-                                Text("YOUR ADVENTURES")
+                                Text("VOLUNTEER")
                                     .font(.custom("Tahoma-Bold", size: 26))
                                     .foregroundStyle(.white)
                                     .padding([.leading, .bottom], 15)

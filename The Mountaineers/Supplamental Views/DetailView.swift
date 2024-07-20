@@ -7,7 +7,6 @@ import SwiftUI
 
 struct DetailView: View {
     @Environment(\.dismiss) var dismiss
-    @ObservedObject var globalVariables = GlobalVariables.shared
     var title: String
     
     var body: some View {

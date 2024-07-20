@@ -8,7 +8,6 @@ import SwiftData
 
 @main
 struct The_MountaineersApp: App {
-    
     @StateObject var loginManager = LoginManager()
     
     var body: some Scene {

@@ -15,13 +15,13 @@ struct ConservationView: View {
                 Rectangle()
                     .ignoresSafeArea()
                     .frame(height: 90)
-                    .foregroundStyle(.darkPurple)
+                    .foregroundStyle(.darkMagenta)
                     .overlay(
                         VStack {
                             Spacer()
                             
                             HStack {
-                                Text("YOUR ADVENTURES")
+                                Text("CONSERVE")
                                     .font(.custom("Tahoma-Bold", size: 26))
                                     .foregroundStyle(.white)
                                     .padding([.leading, .bottom], 15)

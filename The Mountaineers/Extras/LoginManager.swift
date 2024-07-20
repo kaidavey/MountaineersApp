@@ -35,4 +35,9 @@ class LoginManager: ObservableObject {
     func hasStoredData() -> Bool {
         return loggedInUsername.count > 0
     }
+    
+    func logOut() {
+        loggedInUsername = ""
+        loggedInPassword = ""
+    }
 }

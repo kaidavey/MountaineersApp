@@ -15,13 +15,13 @@ struct AboutView: View {
                 Rectangle()
                     .ignoresSafeArea()
                     .frame(height: 90)
-                    .foregroundStyle(.darkYellow)
+                    .foregroundStyle(.lightOrange)
                     .overlay(
                         VStack {
                             Spacer()
                             
                             HStack {
-                                Text("YOUR ADVENTURES")
+                                Text("ABOUT")
                                     .font(.custom("Tahoma-Bold", size: 26))
                                     .foregroundStyle(.white)
                                     .padding([.leading, .bottom], 15)
