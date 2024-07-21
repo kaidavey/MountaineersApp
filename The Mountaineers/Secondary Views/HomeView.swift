@@ -11,17 +11,6 @@ struct HomeView: View {
             Color
                 .tan
                 .ignoresSafeArea()
-            
-            VStack {
-                HStack {
-                    Text("YOUR ADVENTURES")
-                        .font(.custom("Tahoma-Bold", size: 26))
-                        .foregroundStyle(.dynamicBlack)
-                        .padding(20)
-                    Spacer()
-                }
-                Spacer()
-            }
         }
     }
 }

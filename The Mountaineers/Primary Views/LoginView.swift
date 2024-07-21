@@ -86,7 +86,7 @@ struct LoginView: View {
                     HStack(spacing: 0.7) {
                         Text("Don't have an account? Make one ")
                             .font(.custom("Tahoma", size: 16))
-                            .foregroundStyle(.darkGray)
+                            .foregroundStyle(.charcoal)
                         Link("here.", destination: URL(string: "https://www.mountaineers.org/membership/join-the-mountaineers")!)
                             .font(.custom("Tahoma", size: 16))
                             .foregroundStyle(.darkBlue)

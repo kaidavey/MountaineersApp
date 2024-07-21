@@ -9,7 +9,7 @@ struct SideMenuFooter: View {
     @EnvironmentObject var loginManager: LoginManager
     
     var body: some View {
-        var username: String = loginManager.getUsername()
+        let username: String = loginManager.getUsername()
         
         HStack(spacing: 15) {
             Image(systemName: "person.crop.circle.fill")
