@@ -36,7 +36,7 @@ struct SideMenuView: View {
                                 if option.name.count > 0 {
                                     Button {
                                         selectedTab = option
-                                        isShowing = false
+                                        isShowing.toggle()
                                     } label: {
                                         SideMenuRow(option: option)
                                     }
@@ -59,6 +59,7 @@ struct SideMenuView: View {
                                 .foregroundStyle(.red)
                                 .padding([.leading, .bottom], 10)
                         }
+                        .padding(.bottom, 10)
                     }
                     .padding(.leading, 16)
                     .frame(width: 250, alignment: .leading)

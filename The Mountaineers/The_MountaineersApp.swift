@@ -9,6 +9,7 @@ import SwiftData
 @main
 struct The_MountaineersApp: App {
     @StateObject var loginManager = LoginManager()
+    @State var showSplash = false
     
     var body: some Scene {
         WindowGroup {
