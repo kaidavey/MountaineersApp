@@ -13,7 +13,7 @@ struct MainView: View {
     @State private var selectedTab: SideMenuOption = SideMenuDataService.getData()[0]
     
     var body: some View {
-        ZStack {            
+        ZStack {
             ForEach(SideMenuDataService.getData()) { option in
                 if option.name == selectedTab.name {
                     option.view
@@ -42,39 +42,40 @@ struct MainView: View {
                                 .foregroundStyle(.lightBlue)
                         }
                     }
+                    .overlay(alignment: .leading) {
+                        if !showUpcoming {
+                            Button {
+                                showMenu.toggle()
+                            } label: {
+                                Image(systemName: "line.horizontal.3")
+                                    .imageScale(.large)
+                                    .fontWeight(.bold)
+                                    .foregroundStyle(.lightBlue)
+                                    .padding()
+                            }
+                        }
+                        
+                    }
+                    .overlay(alignment: .trailing) {
+                        Button {
+                            showUpcoming.toggle()
+                        } label: {
+                            if showUpcoming {
+                                Image(systemName: "xmark")
+                                    .imageScale(.large)
+                                    .fontWeight(.bold)
+                                    .foregroundStyle(.lightBlue)
+                            } else {
+                                Image(systemName: "calendar")
+                                    .imageScale(.large)
+                                    .foregroundStyle(.lightBlue)
+                            }
+                        }
+                        .padding()
+                    }
                 
                 Spacer()
             }
-            
-            if !showUpcoming {
-                Button {
-                    showMenu.toggle()
-                } label: {
-                    Image(systemName: "line.horizontal.3")
-                        .imageScale(.large)
-                        .fontWeight(.bold)
-                        .foregroundStyle(.lightBlue)
-                }
-                .padding()
-                .position(x: 30, y: 20)
-            }
-
-            Button {
-                showUpcoming.toggle()
-            } label: {
-                if showUpcoming {
-                    Image(systemName: "xmark")
-                        .imageScale(.large)
-                        .fontWeight(.bold)
-                        .foregroundStyle(.lightBlue)
-                } else {
-                    Image(systemName: "calendar")
-                        .imageScale(.large)
-                        .foregroundStyle(.lightBlue)
-                }
-            }
-            .padding()
-            .position(x: 365, y: 20)
             
             SideMenuView(isShowing: $showMenu, selectedTab: $selectedTab)
                 .environmentObject(loginManager)

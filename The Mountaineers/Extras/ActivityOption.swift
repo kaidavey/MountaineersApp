@@ -11,5 +11,4 @@ struct ActivityOption: Identifiable {
     var name: String
     var image: String
     var description: String
-    var rating: Int
 }

@@ -8,7 +8,6 @@ import SwiftUI
 struct DetailView: View {
     @EnvironmentObject var upcomingManager: UpcomingManager
     @Environment(\.dismiss) var dismiss
-    var title: String
     
     var body: some View {
         NavigationStack {
@@ -17,7 +16,7 @@ struct DetailView: View {
                     .tan
                     .ignoresSafeArea()
                 VStack {
-                    ActivityRowView(inUpcoming: false, activity: ActivityOption(name: "Example", image: "get-outside", description: "Don't you notice how I get quiet when there's no one else aroun. me and you in awkward silence.", rating: 3))
+                    ActivityRowView(inUpcoming: false, activity: ActivityOption(name: "Ancient Lakes Backpack", image: "ancient-lakes", description: "A scenic backpack through the gullies and ridges of Ancient Lakes Basin."))
                     Spacer()
                 }
             }
@@ -42,5 +41,5 @@ struct DetailView: View {
 }
 
 #Preview {
-    DetailView(title: "Example")
+    DetailView()
 }

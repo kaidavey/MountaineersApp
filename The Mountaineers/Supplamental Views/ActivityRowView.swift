@@ -16,48 +16,62 @@ struct ActivityRowView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 60, height: 60)
-                .clipShape(RoundedRectangle(cornerRadius: 4))
+                .clipShape(RoundedRectangle(cornerRadius: 2))
+            
             VStack {
                 HStack {
                     Text(activity.name)
-                        .font(.custom("Times New Roman", size: 20))
-                    ForEach(0..<activity.rating) { _ in
-                        Image(systemName: "star.fill")
-                            .imageScale(.small)
-                            .foregroundStyle(.lightOrange)
-                    }
+                        .font(.custom("Tahoma", size: 16))
+                        .padding(.leading, 10)
+                        .padding(.bottom, 2)
                     Spacer()
                 }
-                .padding(.bottom, 2)
+                
+                Text(activity.description)
+                    .font(.custom("Times New Roman", size: 14))
+                    .padding(.bottom, 4)
                 
                 HStack {
-                    Text(activity.description)
-                        .font(.custom("Times New Roman", size: 14))
                     if inUpcoming {
-                        Button {
-                            cartManager.removeFromOrder(item: activity)
-                        } label: {
-                            Image(systemName: "trash")
-                        }
-                        .imageScale(.small)
+                        Rectangle()
+                            .frame(width: 145, height: 20)
+                            .cornerRadius(5)
+                            .foregroundStyle(.red)
+                            .overlay {
+                                Button {
+                                    cartManager.removeFromOrder(item: activity)
+                                } label: {
+                                    Text("Remove from Upcoming")
+                                        .font(.custom("Tahoma", size: 12))
+                                        .foregroundColor(.white)
+                                }
+                                .imageScale(.small)
+                            }
                     } else {
-                        Button {
-                            cartManager.addActivity(item: activity)
-                            inUpcoming.toggle()
-                        } label: {
-                            Image(systemName: "plus")
-                        }
-                        .imageScale(.small)
+                        Rectangle()
+                            .frame(width: 120, height: 20)
+                            .cornerRadius(5)
+                            .foregroundStyle(.darkGreen)
+                            .overlay {
+                                Button {
+                                    cartManager.addActivity(item: activity)
+                                } label: {
+                                    Text("Add to Upcoming")
+                                        .font(.custom("Tahoma", size: 12))
+                                        .foregroundStyle(.white)
+                                }
+                                .imageScale(.small)
+                            }
                     }
                 }
             }
-            .frame(height: 120)
         }
+        .frame(height: 120)
         .padding(.top, 10)
         .padding(.horizontal, 20)
     }
 }
 
 #Preview {
-    ActivityRowView(inUpcoming: false, activity: ActivityOption(name: "Example", image: "get-outside", description: "Don't you notice how I get quiet when there's no one else aroun. me and you in awkward silence.", rating: 3))
+    ActivityRowView(inUpcoming: false, activity: ActivityOption(name: "Ancient Lakes Backpack", image: "ancient-lakes", description: "A scenic backpack through the gullies and ridges of Ancient Lakes Basin."))
 }
