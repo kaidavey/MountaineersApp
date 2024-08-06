@@ -6,7 +6,7 @@
 import SwiftUI
 
 struct ActivityRowView: View {
-    @EnvironmentObject var cartManager: UpcomingManager
+    @EnvironmentObject var upcomingManager: UpcomingManager
     @State var inUpcoming: Bool
     var activity: ActivityOption
     
@@ -39,7 +39,7 @@ struct ActivityRowView: View {
                             .foregroundStyle(.red)
                             .overlay {
                                 Button {
-                                    cartManager.removeFromOrder(item: activity)
+                                    upcomingManager.removeActivity(item: activity)
                                 } label: {
                                     Text("Remove from Upcoming")
                                         .font(.custom("Tahoma", size: 12))
@@ -54,7 +54,7 @@ struct ActivityRowView: View {
                             .foregroundStyle(.darkGreen)
                             .overlay {
                                 Button {
-                                    cartManager.addActivity(item: activity)
+                                    upcomingManager.addActivity(item: activity)
                                 } label: {
                                     Text("Add to Upcoming")
                                         .font(.custom("Tahoma", size: 12))
@@ -73,5 +73,5 @@ struct ActivityRowView: View {
 }
 
 #Preview {
-    ActivityRowView(inUpcoming: false, activity: ActivityOption(name: "Ancient Lakes Backpack", image: "ancient-lakes", description: "A scenic backpack through the gullies and ridges of Ancient Lakes Basin."))
+    ActivityRowView(inUpcoming: false, activity: ActivityOption(name: "Ancient Lakes Backpack", image: "ancient-lakes", description: "A scenic backpack through the gullies and ridges of Ancient Lakes Basin."), date: Date)
 }

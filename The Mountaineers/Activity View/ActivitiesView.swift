@@ -45,7 +45,7 @@ struct ActivitiesView: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(arr) { tile in
                         NavigationLink {
-                            DetailView()
+                            ActivityDetailView()
                                 .environmentObject(upcomingManager)
                         } label: {
                             ActivityTileView(text: tile.text, imageName: tile.imageName, viewOption: tile.viewOption)

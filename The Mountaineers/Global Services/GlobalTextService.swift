@@ -1,5 +1,5 @@
 //
-//  SubHomeViewTextService.swift
+//  GlobalTextService.swift
 //  The Mountaineers
 //
 
