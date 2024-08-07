@@ -22,9 +22,8 @@ struct MainView: View {
                 }
             }
             
-            UpcomingView(/*isShowing: $showUpcoming*/)
+            UpcomingView(isShowing: $showUpcoming)
                 .environmentObject(upcomingManager)
-                .padding(.top, 40)
             
             VStack {
                 Rectangle()

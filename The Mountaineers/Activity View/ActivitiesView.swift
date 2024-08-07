@@ -7,6 +7,7 @@ import SwiftUI
 
 struct ActivitiesView: View {
     @EnvironmentObject var upcomingManager: UpcomingManager
+    @State private var presentNewAct: Bool = false
     
     let columns = [
         GridItem(.flexible()),
@@ -44,21 +45,24 @@ struct ActivitiesView: View {
                 
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(arr) { tile in
-                        NavigationLink {
-                            ActivityDetailView()
-                                .environmentObject(upcomingManager)
+                        Button {
+                            presentNewAct.toggle()
                         } label: {
                             ActivityTileView(text: tile.text, imageName: tile.imageName, viewOption: tile.viewOption)
+                                .padding(10)
                         }
+                        .fullScreenCover(isPresented: $presentNewAct) {
+                            withAnimation(.easeIn(duration: 1.5)) {
+                                ActivityListView(title: tile.text, acts: [ActivityOption(name: "Ancient Lakes", image: "ancient-lakes", blurb: "Come backpacking with us through the Colombia gorge as we smell wildflowers and chase waterfalls. Instructor: John Doe."), ActivityOption(name: "Snow Lake", image: "get-outside", blurb: "There may not be snow, but you're bound to enjoy this backpack. Please bring your own lunch. We meet at the Greenlake parking lot.")])
+                            }
+                        }
+                        
                     }
+                    //.padding()
                 }
-                .padding()
+                //.background(.tan)
             }
-            .background(.tan)
         }
     }
 }
 
-#Preview {
-    ActivitiesView()
-}

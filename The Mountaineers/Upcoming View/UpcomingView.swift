@@ -19,79 +19,89 @@ struct UpcomingView: View {
     @State private var createWeek: Bool = false
     
     var body: some View {
-        //if isShowing {
-        ZStack {
-            Color
-                .tan
-                .ignoresSafeArea()
-            VStack {
-                TabView(selection: $currentWeekIndex,
-                        content: {
-                    ForEach(weekSlider.indices, id: \.self) { index in
-                        let week = weekSlider[index]
-                        
-                        weekView(week)
-                            .tag(index)
+        if isShowing {
+            ZStack {
+                Color
+                    .tan
+                    .ignoresSafeArea()
+                VStack {
+                    TabView(selection: $currentWeekIndex) {
+                        ForEach(weekSlider.indices, id: \.self) { index in
+                            let week = weekSlider[index]
+                            
+                            weekView(week)
+                                .tag(index)
+                        }
                     }
-                })
-                .tabViewStyle(.page(indexDisplayMode: .never))
-                .frame(height: 150)
-                .padding(.vertical)
-                .background {
-                    Rectangle()
-                        .foregroundStyle(.dynamicGray)
-                        .frame(height: 150)
-                }
-                .onChange(of: currentWeekIndex, initial: false) { oldValue, newValue in
-                    if newValue == 0 || newValue == (weekSlider.count - 1) {
-                        createWeek = true
+                    .tabViewStyle(.page(indexDisplayMode: .never))
+                    .frame(height: 150)
+                    .padding(.vertical)
+                    .onChange(of: currentWeekIndex, initial: false) { oldValue, newValue in
+                        if newValue == 0 || newValue == (weekSlider.count - 1) {
+                            createWeek = true
+                        }
                     }
-                }
-                
-                Spacer()
-                
-                ScrollView {
-                    ForEach(upcomingManager.getActivities()) { activity in
-                        ActivityRowView(inUpcoming: true, activity: activity)
-                            .environmentObject(upcomingManager)
+                    .onAppear {
+                        if weekSlider.isEmpty {
+                            let currentWeek = Date().fetchWeek()
+                            
+                            if let firstDate = currentWeek.first?.date {
+                                weekSlider.append(firstDate.createPreviousWeek())
+                            }
+                            
+                            weekSlider.append(currentWeek)
+                            
+                            if let lastDate = currentWeek.last?.date {
+                                weekSlider.append(lastDate.createNextWeek())
+                            }
+                        }
                     }
-                }
-            }
-            .onAppear {
-                if weekSlider.isEmpty {
-                    let currentWeek = Date().fetchWeek()
-                    
-                    if let firstDate = currentWeek.first?.date {
-                        weekSlider.append(firstDate.createPreviousWeek())
+                    .background {
+                        Rectangle()
+                            .foregroundStyle(.dynamicGray)
+                            .frame(height: 170)
                     }
                     
-                    weekSlider.append(currentWeek)
                     
-                    if let lastDate = currentWeek.last?.date {
-                        weekSlider.append(lastDate.createNextWeek())
-                    }
+                    ActivityContainerView(date: $currentDate)
+                    
+                    Spacer()
                 }
             }
         }
-        //}
     }
     
     @ViewBuilder
     func weekView(_ week: [Date.WeekDay]) -> some View {
         VStack {
-            HStack {
-                Text("Week of " + week[0].date.format("MMMM") + week[0].date.format("d") + week[0].date.format("U"))
-                    .font(.custom("Tahoma", size: 20))
-                    .padding(.leading, 28)
-                    .padding(.vertical, 15)
-                Spacer()
+            HStack(spacing: 10) {
+                Button {
+                    
+                } label: {
+                    Image(systemName: "chevron.backward")
+                        .foregroundStyle(.dynamicBlack)
+                        .imageScale(.small)
+                }
+                
+                Text("Week of " + week[0].date.format("MMMM") + " " + week[0].date.format("d") + ", " + week[0].date.format("U"))
+                    .font(.custom("Tahoma", size: 16))
+                    .padding(15)
+                    .foregroundStyle(.dynamicBlack)
+                
+                Button {
+                    
+                } label: {
+                    Image(systemName: "chevron.forward")
+                        .foregroundStyle(.dynamicBlack)
+                        .imageScale(.small)
+                }
             }
             
             HStack(spacing: 0) {
                 ForEach(week) { day in
                     VStack {
                         Text(day.date.format("E"))
-                            .font(.custom("Tahoma", fixedSize: 12))
+                            .font(.custom("Tahoma", size: 12))
                             .opacity(0.5)
                         
                         Text(day.date.format("dd"))
@@ -102,14 +112,11 @@ struct UpcomingView: View {
                                 if isSameDate(day.date, currentDate) {
                                     Circle()
                                         .fill(day.date.isToday ? .darkBlue : .lightBlue)
-                                        .matchedGeometryEffect(id: "TABINDICATOR", in: animation)
                                 }
                             })
                     }
                     .onTapGesture {
-                        withAnimation(.snappy) {
-                            currentDate = day.date
-                        }
+                        currentDate = day.date
                     }
                 }
             }
@@ -129,6 +136,7 @@ struct UpcomingView: View {
                 }
             }
         }
+        .padding(.top, 25)
     }
     
     func paginateWeek() {

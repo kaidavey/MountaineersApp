@@ -18,8 +18,9 @@ extension Date {
     }
     
     func fetchWeek(_ date: Date = Date()) -> [WeekDay] {
+        let sunday = startOfWeek(from: date)
         let calendar = Calendar.current
-        let startDate = calendar.startOfDay(for: date)
+        let startDate = calendar.startOfDay(for: sunday)
         
         var week: [WeekDay] = []
         let weekDate = calendar.dateInterval(of: .weekOfMonth, for: startDate)
@@ -54,6 +55,15 @@ extension Date {
         }
         
         return fetchWeek(nextDate)
+    }
+    
+    func startOfWeek(from date: Date) -> Date {
+        var calendar = Calendar.current
+        calendar.firstWeekday = 1
+        
+        let startOfWeek = calendar.dateInterval(of: .weekOfYear, for: date)?.start ?? Date()
+        
+        return startOfWeek
     }
     
     struct WeekDay: Identifiable {

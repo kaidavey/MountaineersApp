@@ -8,39 +8,51 @@ import SwiftUI
 struct ActivityDetailView: View {
     @EnvironmentObject var upcomingManager: UpcomingManager
     @Environment(\.dismiss) var dismiss
+    @Environment(\.modelContext) private var context
+    
+    var activity: ActivityOption
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                Color
-                    .tan
-                    .ignoresSafeArea()
-                VStack {
-                    ActivityRowView(inUpcoming: true, activity: ActivityOption(name: "Ancient Lakes Backpack", image: "ancient-lakes", description: "A scenic backpack through the gullies and ridges of Ancient Lakes Basin."))
-                    Spacer()
+        VStack {
+            Rectangle()
+                .ignoresSafeArea()
+                .foregroundStyle(.charcoal)
+                .frame(height: 40)
+                .overlay {
+                    Text(activity.name.uppercased())
+                        .font(.custom("Tahoma-Bold", size: 18))
+                        .foregroundStyle(.lightGreen)
                 }
-            }
-            .navigationBarBackButtonHidden(true)
-            /*
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button {
-                        dismiss()
-                    } label: {
-                        HStack {
-                            Image(systemName: "arrow.left")
-                                .fontWeight(.semibold)
-                            Text("Back")
-                                .font(.custom("Tahoma", size: 18))
+                .overlay(alignment: .leading) {
+                        Button {
+                            dismiss()
+                        } label: {
+                            Image(systemName: "arrow.backward")
+                                .imageScale(.large)
+                                .fontWeight(.bold)
+                                .foregroundStyle(.lightGreen)
+                                .padding()
                         }
-                        .foregroundStyle(.darkGreen)
-                    }
+                    
                 }
-            }*/
+            
+            Image(activity.image)
+                .resizable()
+                .scaledToFit()
+            
+            Button {
+                do {
+                    context.insert(activity)
+                    try context.save()
+                } catch {
+                    print(error.localizedDescription)
+                }
+                dismiss()
+            } label: {
+                Text("Join \(activity.name)")
+            }
+            
+            Spacer()
         }
     }
-}
-
-#Preview {
-    ActivityDetailView()
 }

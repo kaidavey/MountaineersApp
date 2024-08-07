@@ -22,5 +22,6 @@ struct The_MountaineersApp: App {
                     .environmentObject(loginManager)
             }
         }
+        .modelContainer(for: ActivityOption.self)
     }
 }
