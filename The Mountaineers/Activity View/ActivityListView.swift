@@ -7,9 +7,10 @@ import SwiftUI
 
 struct ActivityListView: View {
     @Environment(\.dismiss) var dismiss
-    
+    @StateObject private var service = ActivityService()
+
     var title: String
-    
+
     var body: some View {
         NavigationStack {
             VStack(spacing: 20) {
@@ -32,16 +33,47 @@ struct ActivityListView: View {
                                 .foregroundStyle(.lightGreen)
                                 .padding()
                         }
-                    
                     }
-                ScrollView {
-                    VStack(spacing: 12) {
-                        ForEach(0..<10) { _ in
-                            ActivityTile()
+
+                if service.isLoading {
+                    Spacer()
+                    ProgressView("Loading activities…")
+                    Spacer()
+                } else if let error = service.errorMessage {
+                    Spacer()
+                    VStack(spacing: 8) {
+                        Image(systemName: "exclamationmark.triangle")
+                            .font(.largeTitle)
+                            .foregroundStyle(.secondary)
+                        Text(error)
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal)
+                        Button("Retry") {
+                            Task { await service.fetchActivities(for: title) }
+                        }
+                    }
+                    Spacer()
+                } else if service.activities.isEmpty {
+                    Spacer()
+                    Text("No upcoming activities for \(title).")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                    Spacer()
+                } else {
+                    ScrollView {
+                        VStack(spacing: 12) {
+                            ForEach(service.activities) { activity in
+                                ActivityTile(activity: activity)
+                            }
                         }
                     }
                 }
             }
+        }
+        .task {
+            await service.fetchActivities(for: title)
         }
     }
 }

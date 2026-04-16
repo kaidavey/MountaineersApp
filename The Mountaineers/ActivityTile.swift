@@ -1,24 +1,43 @@
 //
-//  AboutView.swift
+//  ActivityTile.swift
 //  The Mountaineers
 //
 
 import SwiftUI
 
 struct ActivityTile: View {
+    let activity: Activity
+
     var body: some View {
         HStack {
-            Image(.backcountrySkiing)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 90, height: 120)
-                .cornerRadius(8)
-                .padding(.leading, 12)
+            AsyncImage(url: URL(string: activity.imageURL)) { phase in
+                switch phase {
+                case .success(let image):
+                    image
+                        .resizable()
+                        .scaledToFill()
+                case .failure:
+                    Image(systemName: "photo")
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundStyle(.secondary)
+                        .padding(20)
+                case .empty:
+                    ProgressView()
+                @unknown default:
+                    EmptyView()
+                }
+            }
+            .frame(width: 90, height: 120)
+            .cornerRadius(8)
+            .padding(.leading, 12)
+
             Spacer()
+
             VStack {
                 VStack {
                     HStack {
-                        Text("Winter Backcountry Ski")
+                        Text(activity.name)
                             .fontWeight(.medium)
                             .font(.title3)
                             .padding(.bottom, 0.4)
@@ -31,7 +50,7 @@ struct ActivityTile: View {
                             .frame(width: 6)
                             .font(.caption)
                             .padding(.leading, 3)
-                        Text("Mt. Rainer National Park, WA")
+                        Text(activity.location)
                             .font(.subheadline)
                         Spacer()
                     }
@@ -42,7 +61,7 @@ struct ActivityTile: View {
                             .frame(width: 6)
                             .font(.caption)
                             .padding(.leading, 3)
-                        Text("Matt D., Veronica H.")
+                        Text(activity.leadersDisplay)
                             .font(.subheadline)
                         Spacer()
                     }
@@ -50,7 +69,7 @@ struct ActivityTile: View {
                 }
                 Spacer()
                 HStack {
-                    Text("4 spots")
+                    Text("\(activity.spotsAvailable) spots")
                         .font(.subheadline)
                         .opacity(0.4)
                     Spacer()
@@ -64,28 +83,30 @@ struct ActivityTile: View {
                             )
                             .overlay {
                                 HStack {
-                                    Image(systemName: "skis.fill")
+                                    Image(systemName: activity.categoryIcon)
                                         .foregroundStyle(.lightBlue)
                                         .font(.footnote)
-                                    Text("Skiing")
+                                    Text(activity.category)
                                         .foregroundStyle(.lightBlue)
                                         .font(.subheadline)
                                         .fontWeight(.medium)
                                 }
                             }
-                        Circle()
-                            .frame(width: 28)
-                            .foregroundStyle(Color(hex: 0xfdfdfd))
-                            .overlay(
-                                Circle()
-                                    .stroke(Color.white, lineWidth: 1)
-                            )
-                            .overlay {
-                                Image(systemName: "link")
-                                    .foregroundStyle(.black)
-                                    .font(.footnote)
-                                    .fontWeight(.medium)
-                            }
+                        Link(destination: URL(string: activity.activityURL) ?? URL(string: "https://mountaineers.org")!) {
+                            Circle()
+                                .frame(width: 28)
+                                .foregroundStyle(Color(hex: 0xfdfdfd))
+                                .overlay(
+                                    Circle()
+                                        .stroke(Color.white, lineWidth: 1)
+                                )
+                                .overlay {
+                                    Image(systemName: "link")
+                                        .foregroundStyle(.black)
+                                        .font(.footnote)
+                                        .fontWeight(.medium)
+                                }
+                        }
                         Image(systemName: "ellipsis")
                     }
                 }
@@ -102,7 +123,19 @@ struct ActivityTile: View {
 }
 
 #Preview {
-    ActivityTile()
+    ActivityTile(activity: Activity(
+        id: "preview",
+        name: "Winter Backcountry Ski",
+        location: "Mt. Rainier National Park, WA",
+        leaders: ["Matt D.", "Veronica H."],
+        spotsAvailable: 4,
+        category: "Skiing",
+        categoryIcon: "skis.fill",
+        imageURL: "https://www.mountaineers.org/images/sample.jpg",
+        activityURL: "https://www.mountaineers.org",
+        date: Date(),
+        blurb: "A beautiful winter ski tour."
+    ))
 }
 
 extension Color {
