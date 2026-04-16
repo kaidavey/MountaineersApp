@@ -7,14 +7,14 @@ import SwiftUI
 
 struct ActivitiesView: View {
     @EnvironmentObject var upcomingManager: UpcomingManager
-    @State private var presentNewAct: Bool = false
-    
+    @State private var selectedTile: ActivityTileView?
+
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
     let arr: [ActivityTileView] = ActivityTileDataService.getData()
-    
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -35,35 +35,28 @@ struct ActivitiesView: View {
                             Spacer()
                         }
                     }
-                
+
                 Text(activitiesBlurb)
                     .font(.custom("New Spirit", size: 14))
                     .padding([.trailing, .bottom, .leading], 20)
                     .padding(.top, 10)
                     .foregroundStyle(.dynamicBlack)
                     .lineSpacing(5)
-                
+
                 LazyVGrid(columns: columns, spacing: 16) {
                     ForEach(arr) { tile in
                         Button {
-                            presentNewAct.toggle()
+                            selectedTile = tile
                         } label: {
                             ActivityTileView(text: tile.text, imageName: tile.imageName, viewOption: tile.viewOption)
-                                //.padding(.horizontal, 4)
                         }
-                        .fullScreenCover(isPresented: $presentNewAct) {
-                            withAnimation(.easeIn(duration: 1.5)) {
-                                ActivityListView(title: tile.text, acts: [ActivityOption(name: "Ancient Lakes", image: "ancient-lakes", blurb: "Come backpacking with us through the Colombia gorge as we smell wildflowers and chase waterfalls. Instructor: John Doe."), ActivityOption(name: "Snow Lake", image: "get-outside", blurb: "There may not be snow, but you're bound to enjoy this backpack. Please bring your own lunch. We meet at the Greenlake parking lot.")])
-                            }
-                        }
-                        
                     }
-                    //.padding()
                 }
                 .padding(.horizontal, 20)
-                //.background(.tan)
             }
+        }
+        .fullScreenCover(item: $selectedTile) { tile in
+            ActivityListView(title: tile.text)
         }
     }
 }
-

@@ -37,5 +37,7 @@ struct HomeView: View {
                 }
             }
         }
+
+        
     }
 }
