@@ -43,23 +43,24 @@ struct ActivitiesView: View {
                     .foregroundStyle(.dynamicBlack)
                     .lineSpacing(5)
                 
-                LazyVGrid(columns: columns, spacing: 20) {
+                LazyVGrid(columns: columns, spacing: 16) {
                     ForEach(arr) { tile in
                         Button {
                             presentNewAct.toggle()
                         } label: {
                             ActivityTileView(text: tile.text, imageName: tile.imageName, viewOption: tile.viewOption)
-                                .padding(10)
+                                //.padding(.horizontal, 4)
                         }
                         .fullScreenCover(isPresented: $presentNewAct) {
                             withAnimation(.easeIn(duration: 1.5)) {
-                                ActivityListView(title: tile.text, acts: [ActivityOption(name: "Ancient Lakes", image: "ancient-lakes", blurb: "Come backpacking with us through the Colombia gorge as we smell wildflowers and chase waterfalls. Instructor: John Doe."), ActivityOption(name: "Snow Lake", image: "get-outside", blurb: "There may not be snow, but you're bound to enjoy this backpack. Please bring your own lunch. We meet at the Greenlake parking lot.")])
+                                ActivityListView(title: tile.text)
                             }
                         }
                         
                     }
                     //.padding()
                 }
+                .padding(.horizontal, 20)
                 //.background(.tan)
             }
         }

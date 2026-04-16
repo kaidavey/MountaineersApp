@@ -18,6 +18,6 @@ struct SideMenuDataService {
                 SideMenuOption(name: "", isFontLarge: false, view: AnyView(EmptyView())),
                 SideMenuOption(name: "VOLUNTEER", isFontLarge: true, view: AnyView(VolunteerView())),
                 SideMenuOption(name: "", isFontLarge: false, view: AnyView(EmptyView())),
-                SideMenuOption(name: "ABOUT", isFontLarge: true, view: AnyView(AboutView()))]
+                SideMenuOption(name: "ABOUT", isFontLarge: true, view: AnyView(ActivityTile()))]
     }
 }

@@ -11,69 +11,61 @@ struct ActivityRowView: View {
     var activity: ActivityOption
     
     var body: some View {
-        HStack {
-            Image(activity.image)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 60, height: 60)
-                .clipShape(RoundedRectangle(cornerRadius: 2))
-            
-            VStack {
-                HStack {
-                    Text(activity.name)
-                        .font(.custom("Interstate", size: 16))
-                        .padding(.leading, 10)
-                        .padding(.bottom, 2)
-                        .foregroundStyle(.dynamicBlack)
-                    Spacer()
+        VStack {
+            HStack {
+                Image(activity.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 100, height: 100)
+                    .clipShape(RoundedRectangle(cornerRadius: 2))
+                
+                VStack {
+                    VStack {
+                        HStack {
+                            Text(activity.name)
+                                .font(.custom("Interstate", size: 20))
+                                .padding(.bottom, 5)
+                                .foregroundStyle(.dynamicBlack)
+                            Spacer()
+                        }
+                        HStack {
+                            Text(activity.date.format("MMM d, yyyy"))
+                                .font(.custom("Interstate", size: 16))
+                                .foregroundStyle(.blue)
+                            Spacer()
+                        }
+                        HStack {
+                            Text(activity.date.format("h:mm a"))
+                                .font(.custom("Interstate", size: 16))
+                                .foregroundStyle(.blue)
+                            Spacer()
+                        }
+                        Spacer()
+                    }
+                    .padding(.leading, 10)
                     
-                    Label("\(activity.date.format("hh:mm a"))", systemImage: "clock")
-                        .font(.custom("Interstate", size: 16))
-                        .foregroundStyle(.dynamicBlack)
+                    HStack {
+                        
+                    }
+                    Spacer()
                 }
                 
+                Spacer()
+            }
+            
+            HStack {
                 Text(activity.blurb)
                     .font(.custom("Tahoma", size: 12))
                     .padding(.bottom, 4)
                     .foregroundStyle(.dynamicBlack)
-                
-                /*HStack {
-                 if inUpcoming {
-                 Rectangle()
-                 .frame(width: 145, height: 20)
-                 .cornerRadius(5)
-                 .foregroundStyle(.red)
-                 .overlay {
-                 Button {
-                 upcomingManager.removeActivity(item: activity)
-                 } label: {
-                 Text("Remove from Upcoming")
-                 .font(.custom("Tahoma", size: 12))
-                 .foregroundColor(.white)
-                 }
-                 .imageScale(.small)
-                 }
-                 } else {
-                 Rectangle()
-                 .frame(width: 120, height: 20)
-                 .cornerRadius(5)
-                 .foregroundStyle(.darkGreen)
-                 .overlay {
-                 Button {
-                 upcomingManager.addActivity(item: activity)
-                 } label: {
-                 Text("Add to Upcoming")
-                 .font(.custom("Tahoma", size: 12))
-                 .foregroundStyle(.white)
-                 }
-                 .imageScale(.small)
-                 }
-                 }*/
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Spacer()
             }
         }
         .frame(height: 120)
         .padding(.top, 10)
         .padding(.horizontal, 20)
+        .padding(.bottom, 20)
     }
 }
 

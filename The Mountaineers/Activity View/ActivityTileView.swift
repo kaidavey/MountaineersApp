@@ -16,13 +16,13 @@ struct ActivityTileView: View, Identifiable {
             Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 150, height: 150)
+                .frame(width: 170, height: 170)
                 .clipShape(Rectangle())
             
             VStack {
                 Spacer()
                 Rectangle()
-                    .frame(width: 150, height: text.count >= 24 ? 40 : 30)
+                    .frame(width: 170, height: text.count >= 24 ? 45 : 35)
                     .foregroundStyle(.darkGreen)
                     .opacity(0.8)
                     .overlay(
@@ -30,14 +30,14 @@ struct ActivityTileView: View, Identifiable {
                             Text(text)
                                 .foregroundStyle(.white)
                                 .padding(.leading, 8)
-                                .font(.custom("Tahoma-Bold", size: 12))
+                                .font(.custom("Tahoma-Bold", size: 14))
                             
                             Spacer()
                         }
                     )
             }
         }
-        .frame(width: 150, height: 150)
+        .frame(width: 170, height: 170)
         .clipShape(RoundedRectangle(cornerRadius: 5))
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40ED0F632F90665A00B35DDD /* FilterTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ED0F622F90665A00B35DDD /* FilterTile.swift */; };
 		C70C424F2C31DDEF00800E51 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C424E2C31DDEF00800E51 /* MainView.swift */; };
 		C70DB3B12C3088F900DFBEC2 /* The_MountaineersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */; };
 		C70DB3B32C3088F900DFBEC2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B22C3088F900DFBEC2 /* LoginView.swift */; };
@@ -21,7 +22,7 @@
 		C70F3DBF2C34B3D400138072 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DBE2C34B3D400138072 /* CoursesView.swift */; };
 		C70F3DC12C34B3F700138072 /* ConservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DC02C34B3F700138072 /* ConservationView.swift */; };
 		C70F3DC32C34B40300138072 /* VolunteerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DC22C34B40300138072 /* VolunteerView.swift */; };
-		C70F3DD12C34B45800138072 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DD02C34B45800138072 /* AboutView.swift */; };
+		C70F3DD12C34B45800138072 /* ActivityTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F3DD02C34B45800138072 /* ActivityTile.swift */; };
 		C70F3DD32C34C0F400138072 /* New Spirit Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70F3DD22C34C0F400138072 /* New Spirit Regular.otf */; };
 		C75B09CA2C4CD73000EF6DCA /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B09C92C4CD73000EF6DCA /* UpcomingView.swift */; };
 		C75B09CC2C4CF04600EF6DCA /* UpcomingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B09CB2C4CF04600EF6DCA /* UpcomingManager.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40ED0F622F90665A00B35DDD /* FilterTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTile.swift; sourceTree = "<group>"; };
 		C70C424E2C31DDEF00800E51 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C70DB3AD2C3088F900DFBEC2 /* The Mountaineers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Mountaineers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_MountaineersApp.swift; sourceTree = "<group>"; };
@@ -60,7 +62,7 @@
 		C70F3DBE2C34B3D400138072 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
 		C70F3DC02C34B3F700138072 /* ConservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConservationView.swift; sourceTree = "<group>"; };
 		C70F3DC22C34B40300138072 /* VolunteerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerView.swift; sourceTree = "<group>"; };
-		C70F3DD02C34B45800138072 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		C70F3DD02C34B45800138072 /* ActivityTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTile.swift; sourceTree = "<group>"; };
 		C70F3DD22C34C0F400138072 /* New Spirit Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "New Spirit Regular.otf"; sourceTree = "<group>"; };
 		C75B09C92C4CD73000EF6DCA /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
 		C75B09CB2C4CF04600EF6DCA /* UpcomingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingManager.swift; sourceTree = "<group>"; };
@@ -125,7 +127,8 @@
 				C70F3DBE2C34B3D400138072 /* CoursesView.swift */,
 				C70F3DC02C34B3F700138072 /* ConservationView.swift */,
 				C70F3DC22C34B40300138072 /* VolunteerView.swift */,
-				C70F3DD02C34B45800138072 /* AboutView.swift */,
+				40ED0F622F90665A00B35DDD /* FilterTile.swift */,
+				C70F3DD02C34B45800138072 /* ActivityTile.swift */,
 				C7D1475D2C30CD9600329856 /* Fonts */,
 				C70DB3B82C3088FA00DFBEC2 /* Preview Content */,
 				C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */,
@@ -244,7 +247,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					C70DB3AC2C3088F900DFBEC2 = {
 						CreatedOnToolsVersion = 15.4;
@@ -301,12 +304,13 @@
 				C75B09CA2C4CD73000EF6DCA /* UpcomingView.swift in Sources */,
 				C7CFED972C620190008AEE83 /* ViewExtensions.swift in Sources */,
 				C7CFED992C629AB3008AEE83 /* OffsetKey.swift in Sources */,
+				40ED0F632F90665A00B35DDD /* FilterTile.swift in Sources */,
 				C70F3DBF2C34B3D400138072 /* CoursesView.swift in Sources */,
 				C70F3DC12C34B3F700138072 /* ConservationView.swift in Sources */,
 				C75B09CE2C4CF11200EF6DCA /* ActivityOption.swift in Sources */,
 				C7A1F9AF2C37E2E6009F7DBD /* GlobalTextService.swift in Sources */,
 				C70DB3B12C3088F900DFBEC2 /* The_MountaineersApp.swift in Sources */,
-				C70F3DD12C34B45800138072 /* AboutView.swift in Sources */,
+				C70F3DD12C34B45800138072 /* ActivityTile.swift in Sources */,
 				C70F3D842C3390E500138072 /* SideMenuView.swift in Sources */,
 				C70F3D8E2C347D8400138072 /* ActivityTileView.swift in Sources */,
 				C70F3D922C349AE500138072 /* ActivityTileDataService.swift in Sources */,
@@ -360,6 +364,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = K2ZH6VWPM5;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -423,6 +428,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = K2ZH6VWPM5;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
