@@ -10,7 +10,6 @@ struct ActivityListView: View {
     @StateObject private var service = ActivityService()
 
     var title: String
-    var acts:
 
     var body: some View {
         NavigationStack {
