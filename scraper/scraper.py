@@ -79,15 +79,13 @@ def scrape_all(categories: list[str], max_per_category: int = 50) -> list[dict]:
                 print(f"  [warn] Page load failed: {e}", file=sys.stderr)
                 continue
 
-            # Wait for results to render — adjust selector if needed after inspecting the live site
             try:
-                page.wait_for_selector("ul.searchResults li, .search-results li, li.tileItem", timeout=10000)
+                page.wait_for_selector("div.result-item", timeout=10000)
             except Exception:
-                print("  [warn] No results selector found — dumping visible text for debugging:")
-                print("  ", page.inner_text("body")[:500])
+                print("  [warn] No results found on page")
                 continue
 
-            items = page.query_selector_all("ul.searchResults li, .search-results li, li.tileItem")
+            items = page.query_selector_all("div.result-item")
             print(f"  Found {len(items)} items")
 
             for item in items[:max_per_category]:
@@ -101,49 +99,45 @@ def scrape_all(categories: list[str], max_per_category: int = 50) -> list[dict]:
 
 
 def parse_item(item, config: dict) -> Optional[dict]:
-    """Extract fields from a single rendered result item."""
+    """Extract fields from a single result-item div."""
     try:
-        # Title / name
-        name_el = item.query_selector("a.summary, h2 a, h3 a, .title a, a")
-        name = name_el.inner_text().strip() if name_el else None
+        # Name + activity URL
+        title_el = item.query_selector("h3.result-title a, .result-title a")
+        name = title_el.inner_text().strip() if title_el else None
         if not name:
             return None
+        activity_url = title_el.get_attribute("href") or BASE_URL
 
-        # Activity URL
-        href = name_el.get_attribute("href") if name_el else ""
-        if href and href.startswith("/"):
-            activity_url = BASE_URL + href
-        else:
-            activity_url = href or BASE_URL
-
-        # Date
-        date_el = item.query_selector("span.date, .event-date, time, [class*='date']")
+        # Date  e.g. "Thu, Apr 16, 2026"
+        date_el = item.query_selector(".result-date")
         date_text = date_el.inner_text().strip() if date_el else ""
         date = parse_date(date_text)
 
-        # Location
-        loc_el = item.query_selector("[class*='location'], [class*='branch'], .branch")
-        location = loc_el.inner_text().strip() if loc_el else "Washington, USA"
+        # Branch / location
+        branch_el = item.query_selector(".result-branch")
+        location = branch_el.inner_text().strip() if branch_el else "Washington, USA"
 
-        # Leaders
-        leader_els = item.query_selector_all("[class*='leader'], [class*='Leader']")
+        # Leader(s) — one or more <a> tags inside .result-leader
+        leader_els = item.query_selector_all(".result-leader a")
         leaders = [el.inner_text().strip() for el in leader_els] if leader_els else ["TBD"]
 
-        # Spots available
-        spots_el = item.query_selector("[class*='spot'], [class*='opening'], [class*='availability']")
-        spots_text = spots_el.inner_text().strip() if spots_el else ""
-        match = re.search(r"\d+", spots_text)
-        spots = int(match.group()) if match else 0
+        # Spots — first <strong> inside .counts is participant count
+        counts_el = item.query_selector(".result-availability .counts")
+        spots = 0
+        if counts_el:
+            strong_els = counts_el.query_selector_all("strong")
+            if strong_els:
+                try:
+                    spots = int(strong_els[0].inner_text().strip())
+                except ValueError:
+                    spots = 0
 
         # Image
-        img_el = item.query_selector("img[src]")
-        image_url = ""
-        if img_el:
-            src = img_el.get_attribute("src") or ""
-            image_url = (BASE_URL + src) if src.startswith("/") else src
+        img_el = item.query_selector("a.result-left img")
+        image_url = img_el.get_attribute("src") or "" if img_el else ""
 
         # Blurb
-        blurb_el = item.query_selector("p, .description, [class*='description']")
+        blurb_el = item.query_selector(".result-summary")
         blurb = blurb_el.inner_text().strip() if blurb_el else ""
 
         return {
@@ -164,7 +158,7 @@ def parse_item(item, config: dict) -> Optional[dict]:
 
 
 def parse_date(text: str) -> datetime:
-    for fmt in ("%B %d, %Y", "%b %d, %Y", "%Y-%m-%d", "%m/%d/%Y", "%b. %d, %Y"):
+    for fmt in ("%a, %b %d, %Y", "%B %d, %Y", "%b %d, %Y", "%Y-%m-%d", "%m/%d/%Y"):
         try:
             return datetime.strptime(text.strip(), fmt).replace(tzinfo=timezone.utc)
         except ValueError:
