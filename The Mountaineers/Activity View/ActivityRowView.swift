@@ -13,11 +13,16 @@ struct ActivityRowView: View {
     var body: some View {
         VStack {
             HStack {
-                Image(activity.image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 100, height: 100)
-                    .clipShape(RoundedRectangle(cornerRadius: 2))
+                AsyncImage(url: URL(string: activity.imageURL)) { phase in
+                    switch phase {
+                    case .success(let image):
+                        image.resizable().aspectRatio(contentMode: .fill)
+                    default:
+                        Rectangle().foregroundStyle(.secondary.opacity(0.2))
+                    }
+                }
+                .frame(width: 100, height: 100)
+                .clipShape(RoundedRectangle(cornerRadius: 2))
                 
                 VStack {
                     VStack {

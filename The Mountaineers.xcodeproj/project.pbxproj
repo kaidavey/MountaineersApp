@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		40ED0F632F90665A00B35DDD /* FilterTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ED0F622F90665A00B35DDD /* FilterTile.swift */; };
+		AA0000012F90000000000001 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000022F90000000000002 /* Activity.swift */; };
+		AA0000032F90000000000003 /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000042F90000000000004 /* ActivityService.swift */; };
+		40ED0F652F90B65400B35DDD /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 40ED0F642F90B65400B35DDD /* GoogleService-Info (1).plist */; };
+		40ED0F682F90B74000B35DDD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 40ED0F672F90B74000B35DDD /* FirebaseFirestore */; };
+		40ED0F6A2F90B74000B35DDD /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 40ED0F692F90B74000B35DDD /* FirebaseFirestoreCombine-Community */; };
 		C70C424F2C31DDEF00800E51 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C424E2C31DDEF00800E51 /* MainView.swift */; };
 		C70DB3B12C3088F900DFBEC2 /* The_MountaineersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */; };
 		C70DB3B32C3088F900DFBEC2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70DB3B22C3088F900DFBEC2 /* LoginView.swift */; };
@@ -47,6 +52,9 @@
 
 /* Begin PBXFileReference section */
 		40ED0F622F90665A00B35DDD /* FilterTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTile.swift; sourceTree = "<group>"; };
+		AA0000022F90000000000002 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		AA0000042F90000000000004 /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
+		40ED0F642F90B65400B35DDD /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		C70C424E2C31DDEF00800E51 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C70DB3AD2C3088F900DFBEC2 /* The Mountaineers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Mountaineers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70DB3B02C3088F900DFBEC2 /* The_MountaineersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_MountaineersApp.swift; sourceTree = "<group>"; };
@@ -90,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40ED0F682F90B74000B35DDD /* FirebaseFirestore in Frameworks */,
+				40ED0F6A2F90B74000B35DDD /* FirebaseFirestoreCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +142,7 @@
 				C7D1475D2C30CD9600329856 /* Fonts */,
 				C70DB3B82C3088FA00DFBEC2 /* Preview Content */,
 				C70DB3B62C3088FA00DFBEC2 /* Assets.xcassets */,
+				40ED0F642F90B65400B35DDD /* GoogleService-Info (1).plist */,
 			);
 			path = "The Mountaineers";
 			sourceTree = "<group>";
@@ -196,6 +207,8 @@
 				C75B09D22C4D049C00EF6DCA /* ActivityRowView.swift */,
 				C75B09CD2C4CF11200EF6DCA /* ActivityOption.swift */,
 				C70F3D912C349AE500138072 /* ActivityTileDataService.swift */,
+				AA0000022F90000000000002 /* Activity.swift */,
+				AA0000042F90000000000004 /* ActivityService.swift */,
 			);
 			path = "Activity View";
 			sourceTree = "<group>";
@@ -263,6 +276,9 @@
 				Base,
 			);
 			mainGroup = C70DB3A42C3088F900DFBEC2;
+			packageReferences = (
+				40ED0F662F90B74000B35DDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C70DB3AE2C3088F900DFBEC2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,6 +299,7 @@
 				C70DB3B72C3088FA00DFBEC2 /* Assets.xcassets in Resources */,
 				C7D147632C30E2F900329856 /* Tahoma Regular font.ttf in Resources */,
 				C70F3D902C34979200138072 /* interstate-bold-cond-58b64162258ca.otf in Resources */,
+				40ED0F652F90B65400B35DDD /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +331,8 @@
 				C70F3D842C3390E500138072 /* SideMenuView.swift in Sources */,
 				C70F3D8E2C347D8400138072 /* ActivityTileView.swift in Sources */,
 				C70F3D922C349AE500138072 /* ActivityTileDataService.swift in Sources */,
+				AA0000012F90000000000001 /* Activity.swift in Sources */,
+				AA0000032F90000000000003 /* ActivityService.swift in Sources */,
 				C7D147792C319B6000329856 /* SideMenuOption.swift in Sources */,
 				C7D1476B2C317BE300329856 /* SideMenuFooter.swift in Sources */,
 				C7D147742C31992500329856 /* SideMenuRow.swift in Sources */,
@@ -530,6 +549,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		40ED0F662F90B74000B35DDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40ED0F672F90B74000B35DDD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40ED0F662F90B74000B35DDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		40ED0F692F90B74000B35DDD /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40ED0F662F90B74000B35DDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C70DB3A52C3088F900DFBEC2 /* Project object */;
 }

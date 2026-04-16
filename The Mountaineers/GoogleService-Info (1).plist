@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCY4-PG_MvKgIQC42Ba9YNlwGsiE46Kvf8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>296231759835</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kai.The-Mountaineers</string>
+	<key>PROJECT_ID</key>
+	<string>mountaineers-dea6c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mountaineers-dea6c.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:296231759835:ios:e69668a70657ea4b9b81fe</string>
+</dict>
+</plist>

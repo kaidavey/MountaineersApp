@@ -1,8 +1,9 @@
 import SwiftUI
+import SwiftData
 
 struct HomeView: View {
-    
-    
+    @Query var savedActivities: [ActivityOption]
+
     var body: some View {
         VStack(alignment: .leading) {
             ScrollView(.horizontal, showsIndicators: false) {
@@ -16,10 +17,24 @@ struct HomeView: View {
             .padding(.bottom, 6)
             .padding(.horizontal, 14)
 
-            ScrollView {
-                VStack(spacing: 12) {
-                    ForEach(0..<10) { _ in
-                        ActivityTile()
+            if savedActivities.isEmpty {
+                Spacer()
+                VStack(spacing: 8) {
+                    Image(systemName: "bookmark")
+                        .font(.largeTitle)
+                        .foregroundStyle(.secondary)
+                    Text("No saved activities yet.")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+                .frame(maxWidth: .infinity)
+                Spacer()
+            } else {
+                ScrollView {
+                    VStack(spacing: 12) {
+                        ForEach(savedActivities) { option in
+                            ActivityTile(activity: option.toActivity())
+                        }
                     }
                 }
             }
